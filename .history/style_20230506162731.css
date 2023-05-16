@@ -1,0 +1,116 @@
+#header-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  min-width: 500px;
+  max-height: 300px;
+  min-height: 150px;
+  background-color: lightblue;
+}
+
+#header-left-section {
+  background-color: lightcoral;
+}
+
+#header-right-section {
+  background-color: lightgoldenrodyellow;
+}
+
+#navigation-link-container {
+  max-height: 200px;
+  min-height: 100px;
+  width: ;
+}
+
+#news1-container {
+  /* width: 100%;
+  min-width: 304px; */
+  max-height: 900px;
+  min-height: 800px;
+  background-color: lightgray;
+}
+
+#news1-wrapper {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: lightgreen;
+  max-width: 50%;
+  min-width: 1000px;
+
+  max-height: 900px;
+  min-height: 800px;
+}
+
+#news1-article-container {
+  display: grid;
+  grid-template-columns: 0.34fr 1.5fr 0.7fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  min-width: 304px;
+  max-height: 900px;
+  min-height: 800px;
+  background-color: lightpink;
+}
+
+#news1-weather-container {
+  background-color: lightsalmon;
+}
+
+#news1-article1-container {
+  background-color: lightseagreen;
+}
+
+#news1-article2-container {
+  background-color: lightskyblue;
+}
+
+#news2-container {
+  width: 100%;
+  min-width: 304px;
+  max-height: 900px;
+  min-height: 800px;
+  background-color: lightslategray;
+}
+
+#news2-wrapper {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: lightsteelblue;
+  width: 50%;
+  min-width: 304px;
+  max-height: 900px;
+  min-height: 800px;
+}
+
+@media screen and (min-width: 0) and (max-width: 1016px) {
+  #news1-article-container {
+    display: block;
+  }
+
+  #news1-weather-container {
+    display: inline-block;
+    min-width: 100%;
+    min-height: 150px;
+  }
+
+  #news1-article1-container {
+    display: inline-block;
+    min-width: 100%;
+    min-height: 400px;
+  }
+
+  #news1-article2-container {
+    display: inline-block;
+    min-width: 100%;
+    min-height: 250px;
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 425px) {
+  #header-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}

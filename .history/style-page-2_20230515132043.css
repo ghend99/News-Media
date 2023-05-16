@@ -1,0 +1,117 @@
+#news-container {
+  display: block;
+  max-height: 2000px;
+  min-height: 1500px;
+  background-color: whitesmoke;
+  border-bottom: dashed;
+}
+
+#news-wrapper {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 50%;
+  min-width: 800px;
+  max-height: 2000px;
+  min-height: 1500px;
+  border-left: dashed;
+  border-right: dashed;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#news-article-container {
+  display: grid;
+  grid-template-columns: 23% 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  min-width: 304px;
+  max-height: 2000px;
+  min-height: 1500px;
+  background-color: aliceblue;
+}
+
+#news-article-sidebar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 7% 5%;
+  background-color: lightblue;
+  border-right: solid;
+}
+
+#news-article-sidebar-pillar {
+  background-color: darkblue;
+}
+
+.news-article-sidebar-pillar {
+  color: #c70000;
+}
+
+#news-article-sidebar-details {
+  background-color: darkcyan;
+}
+
+#news-article-sidebar-socials {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: darkgoldenrod;
+}
+
+#news-article-sidebar-second {
+  display: none;
+}
+
+#news-article {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr;
+  background-color: lightcoral;
+}
+
+#news-article-header-container {
+  background-color: darkgreen;
+}
+
+#news-article-article-container {
+  background-color: darkkhaki;
+}
+
+@media screen and (min-width: 0) and (max-width: 819px) {
+  #news-article-container {
+    grid-template-columns: 1fr;
+  }
+
+  #news-wrapper {
+    min-width: 600px;
+  }
+
+  #news-article-sidebar {
+    display: none;
+  }
+
+  #news-article-sidebar-second {
+    display: block;
+    background-color: darkred;
+    max-height: 150px;
+    min-height: 50px;
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 646px) {
+  #news-wrapper {
+    min-width: 540px;
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 646px) {
+  #news-wrapper {
+    min-width: 420px;
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 425px) {
+  #news-wrapper {
+    min-width: 310px;
+  }
+}

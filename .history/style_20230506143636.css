@@ -1,0 +1,30 @@
+#header-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  max-height: 300px;
+  min-height: 150px;
+  background-color: lightblue;
+}
+
+#header-left-section {
+  background-color: lightcoral;
+}
+
+#header-right-section {
+  background-color: lightgoldenrodyellow;
+}
+
+#news1-container {
+  width: 100%;
+  max-height: 300px;
+  min-height: 150px;
+  background-color: lightgray;
+}
+
+@media screen and (min-width: 0) and (max-width: 425px) {
+  #header-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}

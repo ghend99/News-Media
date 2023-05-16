@@ -1,0 +1,7 @@
+#main-container {
+  display: block;
+  max-height: 2000px;
+  min-height: 1500px;
+  background-color: whitesmoke;
+  border-bottom: dashed;
+}

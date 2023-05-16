@@ -1,0 +1,21 @@
+#news-container {
+  display: block;
+  max-height: 2000px;
+  min-height: 1500px;
+  background-color: whitesmoke;
+  border-bottom: dashed;
+}
+
+#news-wrapper {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 50%;
+  min-width: 800px;
+  max-height: 2000px;
+  min-height: 1500px;
+  border-left: dashed;
+  border-right: dashed;
+  padding-left: 10px;
+  padding-right: 10px;
+}
