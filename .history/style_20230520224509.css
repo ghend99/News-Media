@@ -1661,7 +1661,7 @@ a {
   }
 
   #news1-wrapper {
-    min-width: 310px;
+    min-width: 380px;
     min-height: 1450px;
     border: none;
     padding: 0;
@@ -1671,7 +1671,6 @@ a {
 
   #news1-container {
     min-height: 1450px;
-    background-color: #052962;
   }
 
   #news1-article1-container {
