@@ -1909,7 +1909,7 @@ a {
   }
 
   #footer-section2-section5 {
-    border-right: none;
+    border-right: solid;
     border-top: solid;
   }
 

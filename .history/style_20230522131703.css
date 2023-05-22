@@ -1884,14 +1884,14 @@ a {
   }
 
   #footer-container {
-    min-height: 630px;
+    min-height: 690px;
   }
 
   #footer-wrapper {
     min-width: 360px;
     border: none;
     padding: 0;
-    min-height: 630px;
+    min-height: 690px;
   }
 
   #footer-content-container {
@@ -1909,7 +1909,7 @@ a {
   }
 
   #footer-section2-section5 {
-    border-right: none;
+    border-right: solid;
     border-top: solid;
   }
 

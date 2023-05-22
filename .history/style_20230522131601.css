@@ -1884,23 +1884,20 @@ a {
   }
 
   #footer-container {
-    min-height: 630px;
+    min-height: 780px;
   }
 
   #footer-wrapper {
     min-width: 360px;
     border: none;
     padding: 0;
-    min-height: 630px;
+    min-height: 750px;
   }
 
   #footer-content-container {
     grid-template-rows: 1fr;
     border-left: solid;
     border-bottom: solid;
-  }
-
-  #footer-section2-section3 {
     border-right: none;
   }
 
@@ -1909,7 +1906,7 @@ a {
   }
 
   #footer-section2-section5 {
-    border-right: none;
+    border-right: solid;
     border-top: solid;
   }
 
