@@ -118,12 +118,12 @@ const getNews1Article1 = function (searchInput) {
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
-      news1Article1Container.innerHTML = `
-        <a href="${data.response.results[0].webUrl}" target="_blank">
+      for (let i = 0; i > searchInput; i++) {
+        news1Article1Container.innerHTML = `
+        <a href="${data.response.results[i].webUrl}" target="_blank">
           <div id="news1-article1" class="news-container">
-            <img class="news1-article1-thumbnail news1-thumbnail" src="${data.response.results[0].fields.thumbnail}" />
-            <p class="news1-article1-header webpage-header">${data.response.results[0].fields.headline}</p>
+            <img class="news1-article1-thumbnail news1-thumbnail" src="${data.response.results[i].fields.thumbnail}" />
+            <p class="news1-article1-header webpage-header">${data.response.results[i].fields.headline}</p>
           </div>
         </a>
 
@@ -149,11 +149,15 @@ const getNews1Article1 = function (searchInput) {
         </div>
         </a>
 
+
+
+      }
 `;
+      }
     });
 };
 
-getNews1Article1(`News`);
+getNews1Article1(`Football`);
 
 const getNews1Article3 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?q=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -180,7 +184,7 @@ const getNews1Article3 = function (searchInput) {
     });
 };
 
-getNews1Article3(`News`);
+getNews1Article3(``);
 
 const getNewHeaders = function (searchInput) {
   let url = `https://content.guardianapis.com/search?q=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=thumbnail&show-fields=all`;
@@ -218,7 +222,7 @@ const getNewHeaders = function (searchInput) {
     });
 };
 
-getNewHeaders(`News`);
+getNewHeaders(``);
 
 const getNews2Container = function (searchInput) {
   let url = `https://content.guardianapis.com/search?q=${searchInput}&page-size=39&show-blocks=all&api-key=${apiKey}&show-fields=thumbnail&show-fields=all`;
@@ -226,17 +230,17 @@ const getNews2Container = function (searchInput) {
     .then((res) => res.json())
     .then((data) => {
       var date1 = new Date(
-        `${data.response.results[15].webPublicationDate}`
+        `${data.response.results[9].webPublicationDate}`
       ).toLocaleString(`en-UK`);
 
       var date2 = new Date(
-        `${data.response.results[16].webPublicationDate}`
+        `${data.response.results[10].webPublicationDate}`
       ).toLocaleString(`en-UK`);
       var date3 = new Date(
-        `${data.response.results[17].webPublicationDate}`
+        `${data.response.results[11].webPublicationDate}`
       ).toLocaleString(`en-UK`);
       var date4 = new Date(
-        `${data.response.results[18].webPublicationDate}`
+        `${data.response.results[12].webPublicationDate}`
       ).toLocaleString(`en-UK`);
       news2ArticleContainer.innerHTML = `
 
@@ -244,42 +248,42 @@ const getNews2Container = function (searchInput) {
 
       <a href="${data.response.results[4].webUrl}" target="_blank">
       <div id="news2-article1-section1" class="news-container" >
-              <p class="news2-article1-header webpage-header">${data.response.results[10].fields.headline}</p>
-              <p class="news2-article1-author webpage-header">${data.response.results[10].pillarName}</p>
-              <img class="news2-article1-thumbnail news2-thumbnail" src="${data.response.results[10].fields.thumbnail}" />
+              <p class="news2-article1-header webpage-header">${data.response.results[4].fields.headline}</p>
+              <p class="news2-article1-author webpage-header">${data.response.results[4].pillarName}</p>
+              <img class="news2-article1-thumbnail news2-thumbnail" src="${data.response.results[4].fields.thumbnail}" />
             </div>
       </a>
 
             <div id="news2-article1-section2" >
 
-            <a href="${data.response.results[11].webUrl}" target="_blank">
+            <a href="${data.response.results[5].webUrl}" target="_blank">
             <div id="news2-article1-section2-article1" class="news-container">
-                <img class="news2-article1-section2-thumbnail news2-thumbnail" src="${data.response.results[11].fields.thumbnail}"" />
-                <p class="news2-article1-section2-header webpage-header">${data.response.results[11].fields.headline}</p>
+                <img class="news2-article1-section2-thumbnail news2-thumbnail" src="${data.response.results[5].fields.thumbnail}"" />
+                <p class="news2-article1-section2-header webpage-header">${data.response.results[5].fields.headline}</p>
                 <p class="news2-article1-section2-author"></p>
               </div>
             </a>
 
-              <a href="${data.response.results[12].webUrl}" target="_blank">
+              <a href="${data.response.results[5].webUrl}" target="_blank">
               <div id="news2-article1-section2-article1" class="news-container">
-                <img class="news2-article1-section2-thumbnail news2-thumbnail" src="${data.response.results[12].fields.thumbnail}"" />
-                <p class="news2-article1-section2-header webpage-header">${data.response.results[12].fields.headline}</p>
+                <img class="news2-article1-section2-thumbnail news2-thumbnail" src="${data.response.results[6].fields.thumbnail}"" />
+                <p class="news2-article1-section2-header webpage-header">${data.response.results[6].fields.headline}</p>
                 <p class="news2-article1-section2-author"></p>
               </div>
               </a>
 
-              <a href="${data.response.results[13].webUrl}" target="_blank">
+              <a href="${data.response.results[7].webUrl}" target="_blank">
               <div id="news2-article1-section2-article1" class="news-container">
-                <img class="news2-article1-section2-thumbnail news2-thumbnail" src="${data.response.results[13].fields.thumbnail}"" />
-                <p class="news2-article1-section2-header webpage-header">${data.response.results[13].fields.headline}</p>
+                <img class="news2-article1-section2-thumbnail news2-thumbnail" src="${data.response.results[7].fields.thumbnail}"" />
+                <p class="news2-article1-section2-header webpage-header">${data.response.results[7].fields.headline}</p>
                 <p class="news2-article1-section2-author"></p>
               </div>
               </a>
 
-              <a href="${data.response.results[14].webUrl}" target="_blank">
+              <a href="${data.response.results[8].webUrl}" target="_blank">
               <div id="news2-article1-section2-article1" class="news-container">
-                <img class="news2-article1-section2-thumbnail news2-thumbnail" src="${data.response.results[14].fields.thumbnail}"" />
-                <p class="news2-article1-section2-header webpage-header">${data.response.results[14].fields.headline}</p>
+                <img class="news2-article1-section2-thumbnail news2-thumbnail" src="${data.response.results[8].fields.thumbnail}"" />
+                <p class="news2-article1-section2-header webpage-header">${data.response.results[8].fields.headline}</p>
                 <p class="news2-article1-section2-author"></p>
                 </div>
               </a>
@@ -288,35 +292,35 @@ const getNews2Container = function (searchInput) {
           </div>
           <div id="news2-article2">
 
-      <a href="${data.response.results[15].webUrl}" target="_blank">
+      <a href="${data.response.results[9].webUrl}" target="_blank">
           <div id="news2-article2-article1" class="news2-article news-container">
-              <p class="news2-article2-header webpage-header news2-article-blue">${data.response.results[15].fields.headline}</p>
+              <p class="news2-article2-header webpage-header news2-article-blue">${data.response.results[9].fields.headline}</p>
               <p class="news2-article2-date news2-article-blue">${date1}</p>
-              <img class="news2-article2-thumbnail news2-thumbnail" src="${data.response.results[15].fields.thumbnail}" />
+              <img class="news2-article2-thumbnail news2-thumbnail" src="${data.response.results[9].fields.thumbnail}" />
             </div>
           </a>
 
-<a href="${data.response.results[16].webUrl}" target="_blank">
+<a href="${data.response.results[35].webUrl}" target="_blank">
 <div id="news2-article2-article2" class="news2-article news-container">
-              <p class="news2-article2-header webpage-header">${data.response.results[16].fields.headline}</p>
+              <p class="news2-article2-header webpage-header">${data.response.results[35].fields.headline}</p>
               <p class="news2-article2-date">${date2}</p>
-              <img class="news2-article2-thumbnail news2-thumbnail" src="${data.response.results[16].fields.thumbnail}" />
+              <img class="news2-article2-thumbnail news2-thumbnail" src="${data.response.results[35].fields.thumbnail}" />
             </div>
 </a>
 
-<a href="${data.response.results[17].webUrl}" target="_blank">
+<a href="${data.response.results[11].webUrl}" target="_blank">
 <div id="news2-article2-article3" class="news2-article news-container">
-              <p class="news2-article2-header webpage-header">${data.response.results[17].fields.headline}</p>
+              <p class="news2-article2-header webpage-header">${data.response.results[11].fields.headline}</p>
               <p class="news2-article2-date">${date3}</p>
-              <img class="news2-article2-thumbnail news2-thumbnail" src="${data.response.results[17].fields.thumbnail}" />
+              <img class="news2-article2-thumbnail news2-thumbnail" src="${data.response.results[11].fields.thumbnail}" />
             </div>
 </a>
 
-<a href="${data.response.results[18].webUrl}" target="_blank">
+<a href="${data.response.results[12].webUrl}" target="_blank">
 <div id="news2-article2-article4" class="news2-article news-container">
-              <p class="news2-article2-header webpage-header news2-article-blue">${data.response.results[18].fields.headline}</p>
+              <p class="news2-article2-header webpage-header news2-article-blue">${data.response.results[12].fields.headline}</p>
               <p class="news2-article2-date news2-article-blue">${date4}</p>
-              <img class="news2-article2-thumbnail news2-thumbnail" src="${data.response.results[18].fields.thumbnail}" />
+              <img class="news2-article2-thumbnail news2-thumbnail" src="${data.response.results[12].fields.thumbnail}" />
             </div>
 </a>
 
@@ -324,7 +328,7 @@ const getNews2Container = function (searchInput) {
     });
 };
 
-getNews2Container(`News`);
+getNews2Container(``);
 
 const getNews3Article1 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?q=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=thumbnail&show-fields=all`;
@@ -333,45 +337,45 @@ const getNews3Article1 = function (searchInput) {
     .then((data) => {
       news3Article1Container.innerHTML = `
 
-<a href="${data.response.results[19].webUrl}" target="_blank">
+<a href="${data.response.results[13].webUrl}" target="_blank">
 <div id="news3-article1" class="news-container">
-              <p class="news3-article1-topic webpage-header">${data.response.results[19].pillarName}</p>
-              <p class="news3-aticle1-header news-header webpage-header">${data.response.results[19].fields.headline}</p>
+              <p class="news3-article1-topic webpage-header">${data.response.results[13].pillarName}</p>
+              <p class="news3-aticle1-header news-header webpage-header">${data.response.results[13].fields.headline}</p>
             </div>
 </a>
 
-<a href="${data.response.results[20].webUrl}" target="_blank">
+<a href="${data.response.results[14].webUrl}" target="_blank">
 <div id="news3-article1" class="news-container">
-            <p class="news3-article1-topic webpage-header">${data.response.results[20].pillarName}</p>
-            <p class="news3-aticle1-header webpage-header">${data.response.results[20].fields.headline}</p>
+            <p class="news3-article1-topic webpage-header">${data.response.results[14].pillarName}</p>
+            <p class="news3-aticle1-header webpage-header">${data.response.results[14].fields.headline}</p>
           </div>
 </a>
 
-<a href="${data.response.results[21].webUrl}" target="_blank">
+<a href="${data.response.results[15].webUrl}" target="_blank">
  <div id="news3-article1" class="news-container">
-            <p class="news3-article1-topic webpage-header">${data.response.results[21].pillarName}</p>
-            <p class="news3-aticle1-header webpage-header">${data.response.results[21].fields.headline}</p>
+            <p class="news3-article1-topic webpage-header">${data.response.results[15].pillarName}</p>
+            <p class="news3-aticle1-header webpage-header">${data.response.results[15].fields.headline}</p>
           </div>
 </a>
 
-<a href="${data.response.results[22].webUrl}" target="_blank">
+<a href="${data.response.results[16].webUrl}" target="_blank">
 <div id="news3-article1" class="news-container">
-            <p class="news3-article1-topic webpage-header">${data.response.results[22].pillarName}</p>
-            <p class="news3-aticle1-header webpage-header">${data.response.results[22].fields.headline}</p>
+            <p class="news3-article1-topic webpage-header">${data.response.results[16].pillarName}</p>
+            <p class="news3-aticle1-header webpage-header">${data.response.results[16].fields.headline}</p>
           </div>
 </a>
 
-<a href="${data.response.results[23].webUrl}" target="_blank">
+<a href="${data.response.results[17].webUrl}" target="_blank">
 <div id="news3-article1" class="news-container">
-            <p class="news3-article1-topic webpage-header">${data.response.results[23].pillarName}</p>
-            <p class="news3-aticle1-header webpage-header">${data.response.results[23].fields.headline}</p>
+            <p class="news3-article1-topic webpage-header">${data.response.results[17].pillarName}</p>
+            <p class="news3-aticle1-header webpage-header">${data.response.results[17].fields.headline}</p>
           </div>
 </a>
 
       `;
     });
 };
-getNews3Article1(`News`);
+getNews3Article1(``);
 
 const getNews3Article2 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?q=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=thumbnail&show-fields=all`;
@@ -380,38 +384,38 @@ const getNews3Article2 = function (searchInput) {
     .then((data) => {
       news3Article2Container.innerHTML = `
 
-<a href="${data.response.results[24].webUrl}" target="_blank">
+<a href="${data.response.results[18].webUrl}" target="_blank">
 <div id="news3-article2-article1" class="news3-article2 news-container">
-      <img class="news3-article2-thumbnail news3-thumbnail" src="${data.response.results[24].fields.thumbnail}" />
-      <p class="news3-article2-header webpage-header">${data.response.results[24].fields.headline}</p>
+      <img class="news3-article2-thumbnail news3-thumbnail" src="${data.response.results[18].fields.thumbnail}" />
+      <p class="news3-article2-header webpage-header">${data.response.results[18].fields.headline}</p>
     </div>
 </a>
 
-<a href="${data.response.results[25].webUrl}" target="_blank">
+<a href="${data.response.results[19].webUrl}" target="_blank">
 <div id="news3-article2-article2" class="news3-article2 news-container">
-      <img class="news3-article2-thumbnail news3-thumbnail" src="${data.response.results[25].fields.thumbnail}"  />
-      <p class="news3-article2-header webpage-header">${data.response.results[25].fields.headline}</p>
+      <img class="news3-article2-thumbnail news3-thumbnail" src="${data.response.results[19].fields.thumbnail}"  />
+      <p class="news3-article2-header webpage-header">${data.response.results[19].fields.headline}</p>
     </div>
 </a>
 
-<a href="${data.response.results[26].webUrl}" target="_blank">
+<a href="${data.response.results[20].webUrl}" target="_blank">
 <div id="news3-article2-article3" class="news3-article2 news-container">
-      <img class="news3-article2-thumbnail news3-thumbnail" src="${data.response.results[26].fields.thumbnail}" />
-      <p class="news3-article2-header webpage-header">${data.response.results[26].fields.headline}</p>
+      <img class="news3-article2-thumbnail news3-thumbnail" src="${data.response.results[20].fields.thumbnail}" />
+      <p class="news3-article2-header webpage-header">${data.response.results[20].fields.headline}</p>
     </div>
 </a>
 
-  <a href="${data.response.results[27].webUrl}" target="_blank">
+  <a href="${data.response.results[21].webUrl}" target="_blank">
   <div id="news3-article2-article4" class="news3-article2 news-container">
-      <img class="news3-article2-thumbnail news3-thumbnail" src="${data.response.results[27].fields.thumbnail}" />
-      <p class="news3-article2-header webpage-header">${data.response.results[27].fields.headline}</p>
+      <img class="news3-article2-thumbnail news3-thumbnail" src="${data.response.results[21].fields.thumbnail}" />
+      <p class="news3-article2-header webpage-header">${data.response.results[21].fields.headline}</p>
       </div>
   </a>
 
       `;
     });
 };
-getNews3Article2(`News`);
+getNews3Article2(``);
 
 const getNews4Article1 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?q=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=thumbnail&show-fields=all`;
@@ -423,43 +427,43 @@ const getNews4Article1 = function (searchInput) {
       `;
     });
 };
-getNews4Article1(`News`);
+getNews4Article1(``);
 
 const getNews4Article2 = function (searchInput) {
-  let url = `https://content.guardianapis.com/search?q=${searchInput}&page-size=40&show-blocks=all&api-key=${apiKey}&show-fields=thumbnail&show-fields=all`;
+  let url = `https://content.guardianapis.com/search?q=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=thumbnail&show-fields=all`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
       news4Article2Container.innerHTML = `
 
-    <a href="${data.response.results[28].webUrl}" target="_blank">
+    <a href="${data.response.results[22].webUrl}" target="_blank">
     <div id="news4-article2-article1" class="news-container news4-article2-article">
-              <img class="news4-article2-thumbnail news4-thumbnail" class="news4-article2" src="${data.response.results[28].fields.thumbnail}"/>
-              <p class="news4-article2-header webpage-header">${data.response.results[28].fields.headline}</p>
+              <img class="news4-article2-thumbnail news4-thumbnail" class="news4-article2" src="${data.response.results[22].fields.thumbnail}"/>
+              <p class="news4-article2-header webpage-header">${data.response.results[22].fields.headline}</p>
               <p class="news4-article2-description"></p>
             </div>
     </a>
 
-<a href="${data.response.results[29].webUrl}" target="_blank">
+<a href="${data.response.results[23].webUrl}" target="_blank">
 <div id="news4-article2-article2" class="news-container news4-article2-article">
-              <img class="news4-article2-thumbnail news4-thumbnail" class="news4-article2" src="${data.response.results[29].fields.thumbnail}" />
-              <p class="news4-article2-header webpage-header">${data.response.results[29].fields.headline}</p>
+              <img class="news4-article2-thumbnail news4-thumbnail" class="news4-article2" src="${data.response.results[23].fields.thumbnail}" />
+              <p class="news4-article2-header webpage-header">${data.response.results[23].fields.headline}</p>
               <p class="news4-article2-description"></p>
             </div>
 </a>
 
-<a href="${data.response.results[30].webUrl}" target="_blank">
+<a href="${data.response.results[24].webUrl}" target="_blank">
 <div id="news4-article2-article3" class="news-container news4-article2-article">
-              <img class="news4-article2-thumbnail news4-thumbnail" class="news4-article2" src="${data.response.results[30].fields.thumbnail}" />
-              <p class="news4-article2-header webpage-header">${data.response.results[30].fields.headline}</p>
+              <img class="news4-article2-thumbnail news4-thumbnail" class="news4-article2" src="${data.response.results[24].fields.thumbnail}" />
+              <p class="news4-article2-header webpage-header">${data.response.results[24].fields.headline}</p>
               <p class="news4-article2-description"></p>
             </div>
 </a>
 
-<a href="${data.response.results[31].webUrl}" target="_blank">
+<a href="${data.response.results[25].webUrl}" target="_blank">
 <div id="news4-article2-article4" class="news-container news4-article2-article">
-              <img class="news4-article2-thumbnail news4-thumbnail" class="news4-article2" src="${data.response.results[31].fields.thumbnail}" />
-              <p class="news4-article2-header webpage-header">${data.response.results[31].fields.headline}</p>
+              <img class="news4-article2-thumbnail news4-thumbnail" class="news4-article2" src="${data.response.results[25].fields.thumbnail}" />
+              <p class="news4-article2-header webpage-header">${data.response.results[25].fields.headline}</p>
               <p class="news4-article2-description"></p>
             </div>
 </a>
@@ -471,40 +475,40 @@ const getNews4Article2 = function (searchInput) {
 getNews4Article2(``);
 
 const getNews4Article3 = function (searchInput) {
-  let url = `https://content.guardianapis.com/search?q=${searchInput}&page-size=40&show-blocks=all&api-key=${apiKey}&show-fields=thumbnail&show-fields=all`;
+  let url = `https://content.guardianapis.com/search?q=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=thumbnail&show-fields=all`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
       news4Article3Contianer.innerHTML = `
 
-      <a href="${data.response.results[32].webUrl}" target="_blank">
+      <a href="${data.response.results[26].webUrl}" target="_blank">
       <div id="news4-article3-article1" class="news-container">
-              <img class="news4-article3-thumbnail news4-thumbnail" src="${data.response.results[32].fields.thumbnail}" />
-              <p class="news4-article3-header webpage-header">${data.response.results[32].fields.headline}</p>
+              <img class="news4-article3-thumbnail news4-thumbnail" src="${data.response.results[26].fields.thumbnail}" />
+              <p class="news4-article3-header webpage-header">${data.response.results[26].fields.headline}</p>
               <p class="news4-article3-description"></p>
             </div>
       </a>
 
-<a href="${data.response.results[33].webUrl}" target="_blank">
+<a href="${data.response.results[27].webUrl}" target="_blank">
 <div id="news4-article3-article2" class="news-container">
-              <img class="news4-article3-thumbnail news4-thumbnail" src="${data.response.results[33].fields.thumbnail}"  />
-              <p class="news4-article3-header webpage-header">${data.response.results[33].fields.headline}</p>
+              <img class="news4-article3-thumbnail news4-thumbnail" src="${data.response.results[27].fields.thumbnail}"  />
+              <p class="news4-article3-header webpage-header">${data.response.results[27].fields.headline}</p>
               <p class="news4-article2-description"></p>
             </div>
 </a>
 
-<a href="${data.response.results[34].webUrl}" target="_blank">
+<a href="${data.response.results[28].webUrl}" target="_blank">
 <div id="news4-article3-article3" class="news-container">
-              <img class="news4-article3-thumbnail news4-thumbnail" src="${data.response.results[34].fields.thumbnail}" />
-              <p class="news4-article3-header webpage-header">${data.response.results[34].fields.headline}</p>
+              <img class="news4-article3-thumbnail news4-thumbnail" src="${data.response.results[28].fields.thumbnail}" />
+              <p class="news4-article3-header webpage-header">${data.response.results[28].fields.headline}</p>
               <p class="news4-article3-description"></p>
             </div>
 </a>
 
-<a href="${data.response.results[35].webUrl}" target="_blank">
+<a href="${data.response.results[29].webUrl}" target="_blank">
 <div id="news4-article3-article4" class="news-container">
-              <img class="news4-article3-thumbnail news4-thumbnail" src="${data.response.results[35].fields.thumbnail}" />
-              <p class="news4-article3-header webpage-header">${data.response.results[35].fields.headline}</p>
+              <img class="news4-article3-thumbnail news4-thumbnail" src="${data.response.results[29].fields.thumbnail}" />
+              <p class="news4-article3-header webpage-header">${data.response.results[29].fields.headline}</p>
               <p class="news4-article3-description"></p>
             </div>
 </a>
@@ -516,30 +520,30 @@ const getNews4Article3 = function (searchInput) {
 getNews4Article3(``);
 
 const getNews5Article1 = function (searchInput) {
-  let url = `https://content.guardianapis.com/search?q=${searchInput}&page-size=40&show-blocks=all&api-key=${apiKey}&show-fields=thumbnail&show-fields=all`;
+  let url = `https://content.guardianapis.com/search?q=${searchInput}&page-size=35&show-blocks=all&api-key=${apiKey}&show-fields=thumbnail&show-fields=all`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
       news5Article1Container.innerHTML = `
 
-<a href="${data.response.results[36].webUrl}" target="_blank">
+<a href="${data.response.results[30].webUrl}" target="_blank">
 <div id="news5-article1-article" class="news-container">
-              <p class="news5-article1-header webpage-header">${data.response.results[36].fields.headline}</p>
-              <img class="news5-article1-thumbnail" src="${data.response.results[36].fields.thumbnail}" />
+              <p class="news5-article1-header webpage-header">${data.response.results[30].fields.headline}</p>
+              <img class="news5-article1-thumbnail" src="${data.response.results[30].fields.thumbnail}" />
             </div>
 </a>
 
-<a href="${data.response.results[37].webUrl}" target="_blank">
+<a href="${data.response.results[31].webUrl}" target="_blank">
 <div id="news5-article1-article" class="news-container">
-              <p class="news5-article1-header webpage-header">${data.response.results[37].fields.headline}</p>
-              <img class="news5-article1-thumbnail" src="${data.response.results[37].fields.thumbnail}" />
+              <p class="news5-article1-header webpage-header">${data.response.results[31].fields.headline}</p>
+              <img class="news5-article1-thumbnail" src="${data.response.results[31].fields.thumbnail}" />
             </div>
 </a>
 
 <a href="${data.response.results[32].webUrl}" target="_blank">
 <div id="news5-article1-article" class="news-container">
-              <p class="news5-article1-header webpage-header">${data.response.results[38].fields.headline}</p>
-              <img class="news5-article1-thumbnail" src="${data.response.results[38].fields.thumbnail}" />
+              <p class="news5-article1-header webpage-header">${data.response.results[32].fields.headline}</p>
+              <img class="news5-article1-thumbnail" src="${data.response.results[32].fields.thumbnail}" />
             </div>
 </a>
 
@@ -549,14 +553,14 @@ const getNews5Article1 = function (searchInput) {
 getNews5Article1(``);
 
 const getNews5Article2 = function (searchInput) {
-  let url = `https://content.guardianapis.com/search?q=${searchInput}&page-size=40&show-blocks=all&api-key=${apiKey}&show-fields=thumbnail&show-fields=all`;
+  let url = `https://content.guardianapis.com/search?q=${searchInput}&page-size=36&show-blocks=all&api-key=${apiKey}&show-fields=thumbnail&show-fields=all`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
       news5Article2Container.innerHTML = `
-      <a href="${data.response.results[39].webUrl}" target="_blank">
-      <img class="news5-article2-thumbnail" src="${data.response.results[39].fields.thumbnail}" />
-      <p class="news5-article2-header webpage-header">${data.response.results[39].fields.headline}</p>
+      <a href="${data.response.results[33].webUrl}" target="_blank">
+      <img class="news5-article2-thumbnail" src="${data.response.results[33].fields.thumbnail}" />
+      <p class="news5-article2-header webpage-header">${data.response.results[33].fields.headline}</p>
       </a>
       `;
     });

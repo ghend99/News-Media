@@ -554,9 +554,9 @@ const getNews5Article2 = function (searchInput) {
     .then((res) => res.json())
     .then((data) => {
       news5Article2Container.innerHTML = `
-      <a href="${data.response.results[39].webUrl}" target="_blank">
-      <img class="news5-article2-thumbnail" src="${data.response.results[39].fields.thumbnail}" />
-      <p class="news5-article2-header webpage-header">${data.response.results[39].fields.headline}</p>
+      <a href="${data.response.results[33].webUrl}" target="_blank">
+      <img class="news5-article2-thumbnail" src="${data.response.results[33].fields.thumbnail}" />
+      <p class="news5-article2-header webpage-header">${data.response.results[33].fields.headline}</p>
       </a>
       `;
     });
