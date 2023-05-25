@@ -1476,12 +1476,12 @@ a {
   }
 
   #news4-container {
-    min-height: 910px;
+    min-height: 930px;
   }
 
   #news4-wrapper {
     min-width: 400px;
-    min-height: 910px;
+    min-height: 900px;
   }
 
   #news4-article-container {
@@ -1846,12 +1846,12 @@ a {
   }
 
   #news4-container {
-    min-height: 880px;
+    min-height: 863px;
   }
 
   #news4-wrapper {
     min-width: 360px;
-    min-height: 880px;
+    min-height: 863px;
     border: none;
     padding: 0;
     border-right: dashed;

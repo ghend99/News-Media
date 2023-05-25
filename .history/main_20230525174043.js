@@ -246,7 +246,7 @@ const getNews2Container = function (searchInput) {
       <div id="news2-article1-section1" class="news-container" >
               <p class="news2-article1-header webpage-header">${data.response.results[10].fields.headline}</p>
               
-              
+              <img class="news2-article1-thumbnail news2-thumbnail" src="${data.response.results[10].fields.thumbnail}" />
             </div>
       </a>
 

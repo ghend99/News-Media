@@ -300,7 +300,8 @@ a {
   padding-right: 3px;
   border-right: dashed;
   border-color: black;
-  max-height: 495px;
+  max-height: 435px;
+  min-height: 200px;
   row-gap: 3px;
 }
 
@@ -355,7 +356,7 @@ a {
 .news1-article2 {
   border-right: solid;
   border-color: black;
-  min-height: 210px;
+  min-height: 180px;
 }
 
 #news1-article3-container {
@@ -1117,11 +1118,6 @@ a {
 
   #news1-article1-container {
     grid-template-rows: 1fr 0.8fr;
-    max-height: 455px;
-  }
-
-  .news1-article2 {
-    min-height: 180px;
   }
 
   .news1-article1-thumbnail {
@@ -1295,7 +1291,7 @@ a {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     min-width: 90%;
-    min-height: 500px;
+    min-height: 530px;
     border-bottom: dashed;
     border-right: none;
     border-color: black;
@@ -1379,12 +1375,12 @@ a {
   }
 
   #news2-container {
-    min-height: 750px;
+    min-height: 950px;
   }
 
   #news2-wrapper {
     min-width: 400px;
-    min-height: 750px;
+    min-height: 950px;
   }
 
   .news2-article {
@@ -1476,12 +1472,12 @@ a {
   }
 
   #news4-container {
-    min-height: 910px;
+    min-height: 900px;
   }
 
   #news4-wrapper {
     min-width: 400px;
-    min-height: 910px;
+    min-height: 900px;
   }
 
   #news4-article-container {
@@ -1492,7 +1488,6 @@ a {
   #news4-article1-container-header {
     border-bottom: dashed;
     border-right: none;
-    height: 50px;
   }
 
   .news4-article1-header {
@@ -1846,12 +1841,12 @@ a {
   }
 
   #news4-container {
-    min-height: 880px;
+    min-height: 863px;
   }
 
   #news4-wrapper {
     min-width: 360px;
-    min-height: 880px;
+    min-height: 863px;
     border: none;
     padding: 0;
     border-right: dashed;

@@ -1384,7 +1384,7 @@ a {
 
   #news2-wrapper {
     min-width: 400px;
-    min-height: 750px;
+    min-height: 950px;
   }
 
   .news2-article {
@@ -1476,12 +1476,12 @@ a {
   }
 
   #news4-container {
-    min-height: 910px;
+    min-height: 900px;
   }
 
   #news4-wrapper {
     min-width: 400px;
-    min-height: 910px;
+    min-height: 900px;
   }
 
   #news4-article-container {
@@ -1492,7 +1492,6 @@ a {
   #news4-article1-container-header {
     border-bottom: dashed;
     border-right: none;
-    height: 50px;
   }
 
   .news4-article1-header {
@@ -1846,12 +1845,12 @@ a {
   }
 
   #news4-container {
-    min-height: 880px;
+    min-height: 863px;
   }
 
   #news4-wrapper {
     min-width: 360px;
-    min-height: 880px;
+    min-height: 863px;
     border: none;
     padding: 0;
     border-right: dashed;
