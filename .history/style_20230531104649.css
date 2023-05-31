@@ -1116,11 +1116,10 @@ a {
 @media screen and (min-width: 0) and (max-width: 1681px) {
   .news1-article1-body-text {
     margin-top: 10px;
-    max-height: 125px;
   }
 
   .news1-article1-header {
-    font-size: 19px;
+    font-size: 12px;
   }
 }
 

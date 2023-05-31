@@ -1104,23 +1104,25 @@ a {
   border-radius: 10px;
 }
 
-@media screen and (min-width: 0) and (max-width: 2066px) {
+@media screen and (min-width: 0) and (max-width: 1923px) {
+  .news1-article1-date {
+    top: 30%;
+  }
+
   .news1-article1-body-text {
     display: block;
     margin-top: 0;
     max-width: 40%;
-    max-height: 90px;
+    max-height: 110px;
   }
 }
 
 @media screen and (min-width: 0) and (max-width: 1681px) {
   .news1-article1-body-text {
     margin-top: 10px;
-    max-height: 125px;
   }
 
   .news1-article1-header {
-    font-size: 19px;
   }
 }
 
