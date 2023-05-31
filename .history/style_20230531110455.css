@@ -1114,7 +1114,7 @@ a {
 
   .news1-article2-bodyText {
     display: block;
-    max-height: 55px;
+    max-height: 75px;
     min-height: 20px;
     overflow: hidden;
     margin-top: 0;
@@ -1170,10 +1170,6 @@ a {
 
   .news1-article1-body-text {
     display: none;
-  }
-
-  .news1-article2-bodyText {
-    max-height: 78px;
   }
 
   .footer-section-header {
