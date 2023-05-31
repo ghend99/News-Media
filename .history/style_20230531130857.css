@@ -1991,6 +1991,7 @@ a {
     grid-template-rows: 1fr;
     border-left: solid;
     border-bottom: solid;
+    width: 300px;
   }
 
   #footer-section2-section3 {
@@ -2013,4 +2014,20 @@ a {
   .footer-section2-social-portfolio {
     margin-top: 0;
   }
+
+  /* #news2-container {
+    display: none;
+  } */
+
+  /* #news3-container {
+    display: none;
+  } */
+
+  /* #news4-container {
+    display: none;
+  } */
+
+  /* #news5-container {
+    display: none;
+  } */
 }
