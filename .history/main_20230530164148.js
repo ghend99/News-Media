@@ -115,17 +115,17 @@ document.querySelector(
 
 const getNews1Article1 = function (searchInput) {
   let url = `
-  https://content.guardianapis.com/search?section=${searchInput}&page-size=10&show-blocks=all&api-key=${apiKey}&show-fields=all`;
+  https://content.guardianapis.com/search?section=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
+      console.log(data);
       const news1Thumbnail = document.querySelectorAll(".news1-thumbnail");
       for (let i = 0; i < data.response.results.length; i++) {
         if (data.response.results[i].fields.thumbnail === undefined) {
           console.log(`NO THUMBNAIL`);
-          news1Thumbnail.src = `images/${notFound.jpg}`;
+          // news1Thumbnail.src = `./images/${no_image.jpg}`;
         }
-        console.log(data);
         news1Article1Container.innerHTML = `
         <a href="${data.response.results[i].webUrl}" target="_blank">
           <div id="news1-article1" class="news-container">
@@ -176,7 +176,7 @@ const getNews1Article1 = function (searchInput) {
     });
 };
 
-getNews1Article1(`football`);
+getNews1Article1();
 
 const getNews1Article3 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -213,7 +213,7 @@ const getNews1Article3 = function (searchInput) {
     });
 };
 
-getNews1Article3(`football`);
+getNews1Article3();
 
 const getNewHeaders = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -260,7 +260,7 @@ const getNewHeaders = function (searchInput) {
     });
 };
 
-getNewHeaders(`film`);
+getNewHeaders();
 
 const getNews2Container = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -401,7 +401,7 @@ const getNews2Container = function (searchInput) {
     });
 };
 
-getNews2Container(`politics`);
+getNews2Container();
 
 const getNews3Article1 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -470,7 +470,7 @@ const getNews3Article1 = function (searchInput) {
       }
     });
 };
-getNews3Article1(`culture`);
+getNews3Article1();
 
 const getNews3Article2 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -528,7 +528,7 @@ const getNews3Article2 = function (searchInput) {
       }
     });
 };
-getNews3Article2(`news`);
+getNews3Article2();
 
 const getNews4Article1 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?q=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=thumbnail&show-fields=all`;
@@ -544,7 +544,7 @@ const getNews4Article1 = function (searchInput) {
       }
     });
 };
-getNews4Article1(`news`);
+getNews4Article1(`News`);
 
 const getNews4Article2 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=40&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -607,7 +607,7 @@ const getNews4Article2 = function (searchInput) {
     });
 };
 
-getNews4Article2(`culture`);
+getNews4Article2();
 
 const getNews4Article3 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=40&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -670,7 +670,7 @@ const getNews4Article3 = function (searchInput) {
     });
 };
 
-getNews4Article3(`sport`);
+getNews4Article3(``);
 
 const getNews5Article1 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=40&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -717,7 +717,7 @@ const getNews5Article1 = function (searchInput) {
       }
     });
 };
-getNews5Article1(`news`);
+getNews5Article1();
 
 const getNews5Article2 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=40&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -739,7 +739,7 @@ const getNews5Article2 = function (searchInput) {
     });
 };
 
-getNews5Article2(`news`);
+getNews5Article2();
 
 const section1Container = document.getElementById("news1-container");
 const btnSection1Hide = document.getElementById("news1-container-hide-header");
@@ -861,83 +861,83 @@ const btnNavigationLinkMore = document.getElementById("navigation-link-more");
 btnNavigationLinkSport.addEventListener("click", function (e) {
   e.preventDefault();
   getNews1Article1(`Sport`);
-  // getNews1Article3(`Sport`);
-  // getNews2Container(`Sport`);
-  // getNews3Article1(`Sport`);
-  // getNews3Article2(`Sport`);
-  // getNews4Article1(`Sport`);
-  // getNews4Article2(`Sport`);
-  // getNews4Article3(`Sport`);
-  // getNews5Article1(`Sport`);
-  // getNews5Article2(`Sport`);
+  getNews1Article3(`Sport`);
+  getNews2Container(`Sport`);
+  getNews3Article1(`Sport`);
+  getNews3Article2(`Sport`);
+  getNews4Article1(`Sport`);
+  getNews4Article2(`Sport`);
+  getNews4Article3(`Sport`);
+  getNews5Article1(`Sport`);
+  getNews5Article2(`Sport`);
 });
 
 btnNavigationLinkOpinion.addEventListener("click", function (e) {
   e.preventDefault();
   getNews1Article1(`Politics`);
-  // getNews1Article3(`Politics`);
-  // getNews2Container(`Politics`);
-  // getNews3Article1(`Politics`);
-  // getNews3Article2(`Politics`);
-  // getNews4Article1(`Politics`);
-  // getNews4Article2(`Politics`);
-  // getNews4Article3(`Politics`);
-  // getNews5Article1(`Politics`);
-  // getNews5Article2(`Politics`);
+  getNews1Article3(`Politics`);
+  getNews2Container(`Politics`);
+  getNews3Article1(`Politics`);
+  getNews3Article2(`Politics`);
+  getNews4Article1(`Politics`);
+  getNews4Article2(`Politics`);
+  getNews4Article3(`Politics`);
+  getNews5Article1(`Politics`);
+  getNews5Article2(`Politics`);
 });
 
 btnNavigationLinkNews.addEventListener("click", function (e) {
   e.preventDefault();
   getNews1Article1(`News`);
-  // getNews1Article3(`News`);
-  // getNews2Container(`News`);
-  // getNews3Article1(`News`);
-  // getNews3Article2(`News`);
-  // getNews4Article1(`News`);
-  // getNews4Article2(`News`);
-  // getNews4Article3(`News`);
-  // getNews5Article1(`News`);
-  // getNews5Article2(`News`);
+  getNews1Article3(`News`);
+  getNews2Container(`News`);
+  getNews3Article1(`News`);
+  getNews3Article2(`News`);
+  getNews4Article1(`News`);
+  getNews4Article2(`News`);
+  getNews4Article3(`News`);
+  getNews5Article1(`News`);
+  getNews5Article2(`News`);
 });
 
 btnNavigationLinkCulture.addEventListener("click", function (e) {
   e.preventDefault();
   getNews1Article1(`Culture`);
-  // getNews1Article3(`Culture`);
-  // getNews2Container(`Culture`);
-  // getNews3Article1(`Culture`);
-  // getNews3Article2(`Culture`);
-  // getNews4Article1(`Culture`);
-  // getNews4Article2(`Culture`);
-  // getNews4Article3(`Culture`);
-  // getNews5Article1(`Culture`);
-  // getNews5Article2(`Culture`);
+  getNews1Article3(`Culture`);
+  getNews2Container(`Culture`);
+  getNews3Article1(`Culture`);
+  getNews3Article2(`Culture`);
+  getNews4Article1(`Culture`);
+  getNews4Article2(`Culture`);
+  getNews4Article3(`Culture`);
+  getNews5Article1(`Culture`);
+  getNews5Article2(`Culture`);
 });
 
 btnNavigationLinkLifestyle.addEventListener("click", function (e) {
   e.preventDefault();
   getNews1Article1(`Lifestyle`);
-  // getNews1Article3(`Lifestyle`);
-  // getNews2Container(`Lifestyle`);
-  // getNews3Article1(`Lifestyle`);
-  // getNews3Article2(`Lifestyle`);
-  // getNews4Article1(`Lifestyle`);
-  // getNews4Article2(`Lifestyle`);
-  // getNews4Article3(`Lifestyle`);
-  // getNews5Article1(`Lifestyle`);
-  // getNews5Article2(`Lifestyle`);
+  getNews1Article3(`Lifestyle`);
+  getNews2Container(`Lifestyle`);
+  getNews3Article1(`Lifestyle`);
+  getNews3Article2(`Lifestyle`);
+  getNews4Article1(`Lifestyle`);
+  getNews4Article2(`Lifestyle`);
+  getNews4Article3(`Lifestyle`);
+  getNews5Article1(`Lifestyle`);
+  getNews5Article2(`Lifestyle`);
 });
 
 btnNavigationLinkMore.addEventListener("click", function (e) {
   e.preventDefault();
   getNews1Article1(`More`);
-  // getNews1Article3(`More`);
-  // getNews2Container(`More`);
-  // getNews3Article1(`More`);
-  // getNews3Article2(`More`);
-  // getNews4Article1(`More`);
-  // getNews4Article2(`More`);
-  // getNews4Article3(`More`);
-  // getNews5Article1(`More`);
-  // getNews5Article2(`More`);
+  getNews1Article3(`More`);
+  getNews2Container(`More`);
+  getNews3Article1(`More`);
+  getNews3Article2(`More`);
+  getNews4Article1(`More`);
+  getNews4Article2(`More`);
+  getNews4Article3(`More`);
+  getNews5Article1(`More`);
+  getNews5Article2(`More`);
 });

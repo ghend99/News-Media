@@ -115,17 +115,17 @@ document.querySelector(
 
 const getNews1Article1 = function (searchInput) {
   let url = `
-  https://content.guardianapis.com/search?section=${searchInput}&page-size=10&show-blocks=all&api-key=${apiKey}&show-fields=all`;
+  https://content.guardianapis.com/search?section=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
+      console.log(data);
       const news1Thumbnail = document.querySelectorAll(".news1-thumbnail");
       for (let i = 0; i < data.response.results.length; i++) {
         if (data.response.results[i].fields.thumbnail === undefined) {
           console.log(`NO THUMBNAIL`);
-          news1Thumbnail.src = `images/${notFound.jpg}`;
+          // news1Thumbnail.src = `./images/${no_image.jpg}`;
         }
-        console.log(data);
         news1Article1Container.innerHTML = `
         <a href="${data.response.results[i].webUrl}" target="_blank">
           <div id="news1-article1" class="news-container">
@@ -176,7 +176,7 @@ const getNews1Article1 = function (searchInput) {
     });
 };
 
-getNews1Article1(`football`);
+getNews1Article1();
 
 const getNews1Article3 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -213,7 +213,7 @@ const getNews1Article3 = function (searchInput) {
     });
 };
 
-getNews1Article3(`football`);
+getNews1Article3();
 
 const getNewHeaders = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -260,7 +260,7 @@ const getNewHeaders = function (searchInput) {
     });
 };
 
-getNewHeaders(`film`);
+getNewHeaders();
 
 const getNews2Container = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -401,345 +401,245 @@ const getNews2Container = function (searchInput) {
     });
 };
 
-getNews2Container(`politics`);
+getNews2Container();
 
 const getNews3Article1 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
-      for (let i = 0; i < data.response.results.length; i++) {
-        news3Article1Container.innerHTML = `
+      news3Article1Container.innerHTML = `
 
-<a href="${data.response.results[i + 19].webUrl}" target="_blank">
+<a href="${data.response.results[19].webUrl}" target="_blank">
 <div id="news3-article1" class="news-container">
-              <p class="news3-article1-topic webpage-header">${
-                data.response.results[i + 19].pillarName
-              }</p>
-              <p class="news3-aticle1-header news-header webpage-header">${
-                data.response.results[i + 19].fields.headline
-              }</p>
+              <p class="news3-article1-topic webpage-header">${data.response.results[19].pillarName}</p>
+              <p class="news3-aticle1-header news-header webpage-header">${data.response.results[19].fields.headline}</p>
             </div>
 </a>
 
-<a href="${data.response.results[i + 20].webUrl}" target="_blank">
+<a href="${data.response.results[20].webUrl}" target="_blank">
 <div id="news3-article1" class="news-container">
-            <p class="news3-article1-topic webpage-header">${
-              data.response.results[i + 20].pillarName
-            }</p>
-            <p class="news3-aticle1-header webpage-header">${
-              data.response.results[i + 20].fields.headline
-            }</p>
+            <p class="news3-article1-topic webpage-header">${data.response.results[20].pillarName}</p>
+            <p class="news3-aticle1-header webpage-header">${data.response.results[20].fields.headline}</p>
           </div>
 </a>
 
-<a href="${data.response.results[i + 21].webUrl}" target="_blank">
+<a href="${data.response.results[21].webUrl}" target="_blank">
  <div id="news3-article1" class="news-container">
-            <p class="news3-article1-topic webpage-header">${
-              data.response.results[i + 21].pillarName
-            }</p>
-            <p class="news3-aticle1-header webpage-header">${
-              data.response.results[i + 21].fields.headline
-            }</p>
+            <p class="news3-article1-topic webpage-header">${data.response.results[21].pillarName}</p>
+            <p class="news3-aticle1-header webpage-header">${data.response.results[21].fields.headline}</p>
           </div>
 </a>
 
-<a href="${data.response.results[i + 22].webUrl}" target="_blank">
+<a href="${data.response.results[22].webUrl}" target="_blank">
 <div id="news3-article1" class="news-container">
-            <p class="news3-article1-topic webpage-header">${
-              data.response.results[i + 22].pillarName
-            }</p>
-            <p class="news3-aticle1-header webpage-header">${
-              data.response.results[i + 22].fields.headline
-            }</p>
+            <p class="news3-article1-topic webpage-header">${data.response.results[22].pillarName}</p>
+            <p class="news3-aticle1-header webpage-header">${data.response.results[22].fields.headline}</p>
           </div>
 </a>
 
-<a href="${data.response.results[i + 23].webUrl}" target="_blank">
+<a href="${data.response.results[23].webUrl}" target="_blank">
 <div id="news3-article1" class="news-container">
-            <p class="news3-article1-topic webpage-header">${
-              data.response.results[i + 23].pillarName
-            }</p>
-            <p class="news3-aticle1-header webpage-header">${
-              data.response.results[i + 23].fields.headline
-            }</p>
+            <p class="news3-article1-topic webpage-header">${data.response.results[23].pillarName}</p>
+            <p class="news3-aticle1-header webpage-header">${data.response.results[23].fields.headline}</p>
           </div>
 </a>
 
       `;
-      }
     });
 };
-getNews3Article1(`culture`);
+getNews3Article1();
 
 const getNews3Article2 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
-      for (let i = 0; i < data.response.results.length; i++) {
-        news3Article2Container.innerHTML = `
+      news3Article2Container.innerHTML = `
 
-<a href="${data.response.results[i + 24].webUrl}" target="_blank">
+<a href="${data.response.results[24].webUrl}" target="_blank">
 <div id="news3-article2-article1" class="news3-article2 news-container">
-      <img class="news3-article2-thumbnail news3-thumbnail" src="${
-        data.response.results[i + 24].fields.thumbnail
-      }" />
-      <p class="news3-article2-header webpage-header">${
-        data.response.results[i + 24].fields.headline
-      }</p>
+      <img class="news3-article2-thumbnail news3-thumbnail" src="${data.response.results[24].fields.thumbnail}" />
+      <p class="news3-article2-header webpage-header">${data.response.results[24].fields.headline}</p>
     </div>
 </a>
 
-<a href="${data.response.results[i + 25].webUrl}" target="_blank">
+<a href="${data.response.results[25].webUrl}" target="_blank">
 <div id="news3-article2-article2" class="news3-article2 news-container">
-      <img class="news3-article2-thumbnail news3-thumbnail" src="${
-        data.response.results[i + 25].fields.thumbnail
-      }"  />
-      <p class="news3-article2-header webpage-header">${
-        data.response.results[i + 25].fields.headline
-      }</p>
+      <img class="news3-article2-thumbnail news3-thumbnail" src="${data.response.results[25].fields.thumbnail}"  />
+      <p class="news3-article2-header webpage-header">${data.response.results[25].fields.headline}</p>
     </div>
 </a>
 
-<a href="${data.response.results[i + 26].webUrl}" target="_blank">
+<a href="${data.response.results[26].webUrl}" target="_blank">
 <div id="news3-article2-article3" class="news3-article2 news-container">
-      <img class="news3-article2-thumbnail news3-thumbnail" src="${
-        data.response.results[i + 26].fields.thumbnail
-      }" />
-      <p class="news3-article2-header webpage-header">${
-        data.response.results[i + 26].fields.headline
-      }</p>
+      <img class="news3-article2-thumbnail news3-thumbnail" src="${data.response.results[26].fields.thumbnail}" />
+      <p class="news3-article2-header webpage-header">${data.response.results[26].fields.headline}</p>
     </div>
 </a>
 
-  <a href="${data.response.results[i + 27].webUrl}" target="_blank">
+  <a href="${data.response.results[27].webUrl}" target="_blank">
   <div id="news3-article2-article4" class="news3-article2 news-container">
-      <img class="news3-article2-thumbnail news3-thumbnail" src="${
-        data.response.results[i + 27].fields.thumbnail
-      }" />
-      <p class="news3-article2-header webpage-header">${
-        data.response.results[i + 27].fields.headline
-      }</p>
+      <img class="news3-article2-thumbnail news3-thumbnail" src="${data.response.results[27].fields.thumbnail}" />
+      <p class="news3-article2-header webpage-header">${data.response.results[27].fields.headline}</p>
       </div>
   </a>
 
       `;
-      }
     });
 };
-getNews3Article2(`news`);
+getNews3Article2();
 
 const getNews4Article1 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?q=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=thumbnail&show-fields=all`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
-      for (let i = 0; i < data.response.results.length; i++) {
-        news4Article1Container.innerHTML = `
-      <p class="news4-article1-header webpage-header">${
-        data.response.results[i + 28].pillarName
-      }</p>
+      news4Article1Container.innerHTML = `
+      <p class="news4-article1-header webpage-header">${data.response.results[0].pillarName}</p>
       `;
-      }
     });
 };
-getNews4Article1(`news`);
+getNews4Article1(`News`);
 
 const getNews4Article2 = function (searchInput) {
-  let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=40&show-blocks=all&api-key=${apiKey}&show-fields=all`;
+  let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
-      for (let i = 0; i < data.response.results.length; i++) {
-        news4Article2Container.innerHTML = `
+      news4Article2Container.innerHTML = `
 
-    <a href="${data.response.results[i + 28].webUrl}" target="_blank">
+    <a href="${data.response.results[28].webUrl}" target="_blank">
     <div id="news4-article2-article1" class="news-container news4-article2-article">
-              <img class="news4-article2-thumbnail news4-thumbnail" class="news4-article2" src="${
-                data.response.results[i + 28].fields.thumbnail
-              }"/>
-              <p class="news4-article2-header webpage-header">${
-                data.response.results[i + 28].fields.headline
-              }</p>
+              <img class="news4-article2-thumbnail news4-thumbnail" class="news4-article2" src="${data.response.results[28].fields.thumbnail}"/>
+              <p class="news4-article2-header webpage-header">${data.response.results[28].fields.headline}</p>
               <p class="news4-article2-description"></p>
             </div>
     </a>
 
-<a href="${data.response.results[i + 29].webUrl}" target="_blank">
+<a href="${data.response.results[29].webUrl}" target="_blank">
 <div id="news4-article2-article2" class="news-container news4-article2-article">
-              <img class="news4-article2-thumbnail news4-thumbnail" class="news4-article2" src="${
-                data.response.results[i + 29].fields.thumbnail
-              }" />
-              <p class="news4-article2-header webpage-header">${
-                data.response.results[i + 29].fields.headline
-              }</p>
+              <img class="news4-article2-thumbnail news4-thumbnail" class="news4-article2" src="${data.response.results[29].fields.thumbnail}" />
+              <p class="news4-article2-header webpage-header">${data.response.results[29].fields.headline}</p>
               <p class="news4-article2-description"></p>
             </div>
 </a>
 
-<a href="${data.response.results[i + 30].webUrl}" target="_blank">
+<a href="${data.response.results[30].webUrl}" target="_blank">
 <div id="news4-article2-article3" class="news-container news4-article2-article">
-              <img class="news4-article2-thumbnail news4-thumbnail" class="news4-article2" src="${
-                data.response.results[i + 30].fields.thumbnail
-              }" />
-              <p class="news4-article2-header webpage-header">${
-                data.response.results[i + 30].fields.headline
-              }</p>
+              <img class="news4-article2-thumbnail news4-thumbnail" class="news4-article2" src="${data.response.results[30].fields.thumbnail}" />
+              <p class="news4-article2-header webpage-header">${data.response.results[30].fields.headline}</p>
               <p class="news4-article2-description"></p>
             </div>
 </a>
 
-<a href="${data.response.results[i + 31].webUrl}" target="_blank">
+<a href="${data.response.results[31].webUrl}" target="_blank">
 <div id="news4-article2-article4" class="news-container news4-article2-article">
-              <img class="news4-article2-thumbnail news4-thumbnail" class="news4-article2" src="${
-                data.response.results[i + 31].fields.thumbnail
-              }" />
-              <p class="news4-article2-header webpage-header">${
-                data.response.results[i + 31].fields.headline
-              }</p>
+              <img class="news4-article2-thumbnail news4-thumbnail" class="news4-article2" src="${data.response.results[31].fields.thumbnail}" />
+              <p class="news4-article2-header webpage-header">${data.response.results[31].fields.headline}</p>
               <p class="news4-article2-description"></p>
             </div>
 </a>
 
       `;
-      }
     });
 };
 
-getNews4Article2(`culture`);
+getNews4Article2();
 
 const getNews4Article3 = function (searchInput) {
-  let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=40&show-blocks=all&api-key=${apiKey}&show-fields=all`;
+  let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
-      for (let i = 0; i < data.response.results.length; i++) {
-        news4Article3Contianer.innerHTML = `
+      news4Article3Contianer.innerHTML = `
 
-      <a href="${data.response.results[i + 32].webUrl}" target="_blank">
+      <a href="${data.response.results[32].webUrl}" target="_blank">
       <div id="news4-article3-article1" class="news-container">
-              <img class="news4-article3-thumbnail news4-thumbnail" src="${
-                data.response.results[i + 32].fields.thumbnail
-              }" />
-              <p class="news4-article3-header webpage-header">${
-                data.response.results[i + 32].fields.headline
-              }</p>
+              <img class="news4-article3-thumbnail news4-thumbnail" src="${data.response.results[32].fields.thumbnail}" />
+              <p class="news4-article3-header webpage-header">${data.response.results[32].fields.headline}</p>
               <p class="news4-article3-description"></p>
             </div>
       </a>
 
-<a href="${data.response.results[i + 33].webUrl}" target="_blank">
+<a href="${data.response.results[33].webUrl}" target="_blank">
 <div id="news4-article3-article2" class="news-container">
-              <img class="news4-article3-thumbnail news4-thumbnail" src="${
-                data.response.results[i + 33].fields.thumbnail
-              }"  />
-              <p class="news4-article3-header webpage-header">${
-                data.response.results[i + 33].fields.headline
-              }</p>
+              <img class="news4-article3-thumbnail news4-thumbnail" src="${data.response.results[33].fields.thumbnail}"  />
+              <p class="news4-article3-header webpage-header">${data.response.results[33].fields.headline}</p>
               <p class="news4-article2-description"></p>
             </div>
 </a>
 
-<a href="${data.response.results[i + 34].webUrl}" target="_blank">
+<a href="${data.response.results[34].webUrl}" target="_blank">
 <div id="news4-article3-article3" class="news-container">
-              <img class="news4-article3-thumbnail news4-thumbnail" src="${
-                data.response.results[i + 34].fields.thumbnail
-              }" />
-              <p class="news4-article3-header webpage-header">${
-                data.response.results[i + 34].fields.headline
-              }</p>
+              <img class="news4-article3-thumbnail news4-thumbnail" src="${data.response.results[34].fields.thumbnail}" />
+              <p class="news4-article3-header webpage-header">${data.response.results[34].fields.headline}</p>
               <p class="news4-article3-description"></p>
             </div>
 </a>
 
-<a href="${data.response.results[i + 35].webUrl}" target="_blank">
+<a href="${data.response.results[35].webUrl}" target="_blank">
 <div id="news4-article3-article4" class="news-container">
-              <img class="news4-article3-thumbnail news4-thumbnail" src="${
-                data.response.results[i + 35].fields.thumbnail
-              }" />
-              <p class="news4-article3-header webpage-header">${
-                data.response.results[i + 35].fields.headline
-              }</p>
+              <img class="news4-article3-thumbnail news4-thumbnail" src="${data.response.results[35].fields.thumbnail}" />
+              <p class="news4-article3-header webpage-header">${data.response.results[35].fields.headline}</p>
               <p class="news4-article3-description"></p>
             </div>
 </a>
 
 `;
-      }
     });
 };
 
-getNews4Article3(`sport`);
+getNews4Article3(``);
 
 const getNews5Article1 = function (searchInput) {
-  let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=40&show-blocks=all&api-key=${apiKey}&show-fields=all`;
+  let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
-      for (let i = 0; i < data.response.results.length; i++) {
-        news5Article1Container.innerHTML = `
+      news5Article1Container.innerHTML = `
 
-<a href="${data.response.results[i + 36].webUrl}" target="_blank">
+<a href="${data.response.results[36].webUrl}" target="_blank">
 <div id="news5-article1-article" class="news-container">
-              <p class="news5-article1-header webpage-header">${
-                data.response.results[i + 36].fields.headline
-              }</p>
-              <img class="news5-article1-thumbnail" src="${
-                data.response.results[i + 36].fields.thumbnail
-              }" />
+              <p class="news5-article1-header webpage-header">${data.response.results[36].fields.headline}</p>
+              <img class="news5-article1-thumbnail" src="${data.response.results[36].fields.thumbnail}" />
             </div>
 </a>
 
-<a href="${data.response.results[i + 37].webUrl}" target="_blank">
+<a href="${data.response.results[37].webUrl}" target="_blank">
 <div id="news5-article1-article" class="news-container">
-              <p class="news5-article1-header webpage-header">${
-                data.response.results[i + 37].fields.headline
-              }</p>
-              <img class="news5-article1-thumbnail" src="${
-                data.response.results[i + 37].fields.thumbnail
-              }" />
+              <p class="news5-article1-header webpage-header">${data.response.results[37].fields.headline}</p>
+              <img class="news5-article1-thumbnail" src="${data.response.results[37].fields.thumbnail}" />
             </div>
 </a>
 
-<a href="${data.response.results[i + 38].webUrl}" target="_blank">
+<a href="${data.response.results[32].webUrl}" target="_blank">
 <div id="news5-article1-article" class="news-container">
-              <p class="news5-article1-header webpage-header">${
-                data.response.results[i + 38].fields.headline
-              }</p>
-              <img class="news5-article1-thumbnail" src="${
-                data.response.results[i + 38].fields.thumbnail
-              }" />
+              <p class="news5-article1-header webpage-header">${data.response.results[38].fields.headline}</p>
+              <img class="news5-article1-thumbnail" src="${data.response.results[38].fields.thumbnail}" />
             </div>
 </a>
 
 `;
-      }
     });
 };
-getNews5Article1(`news`);
+getNews5Article1();
 
 const getNews5Article2 = function (searchInput) {
-  let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=40&show-blocks=all&api-key=${apiKey}&show-fields=all`;
+  let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
-      for (let i = 0; i < data.response.results.length; i++) {
-        news5Article2Container.innerHTML = `
-      <a href="${data.response.results[i + 39].webUrl}" target="_blank">
-      <img class="news5-article2-thumbnail" src="${
-        data.response.results[i + 39].fields.thumbnail
-      }" />
-      <p class="news5-article2-header webpage-header">${
-        data.response.results[i + 39].fields.headline
-      }</p>
+      news5Article2Container.innerHTML = `
+      <a href="${data.response.results[39].webUrl}" target="_blank">
+      <img class="news5-article2-thumbnail" src="${data.response.results[39].fields.thumbnail}" />
+      <p class="news5-article2-header webpage-header">${data.response.results[39].fields.headline}</p>
       </a>
       `;
-      }
     });
 };
 
-getNews5Article2(`news`);
+getNews5Article2();
 
 const section1Container = document.getElementById("news1-container");
 const btnSection1Hide = document.getElementById("news1-container-hide-header");
@@ -861,83 +761,83 @@ const btnNavigationLinkMore = document.getElementById("navigation-link-more");
 btnNavigationLinkSport.addEventListener("click", function (e) {
   e.preventDefault();
   getNews1Article1(`Sport`);
-  // getNews1Article3(`Sport`);
-  // getNews2Container(`Sport`);
-  // getNews3Article1(`Sport`);
-  // getNews3Article2(`Sport`);
-  // getNews4Article1(`Sport`);
-  // getNews4Article2(`Sport`);
-  // getNews4Article3(`Sport`);
-  // getNews5Article1(`Sport`);
-  // getNews5Article2(`Sport`);
+  getNews1Article3(`Sport`);
+  getNews2Container(`Sport`);
+  getNews3Article1(`Sport`);
+  getNews3Article2(`Sport`);
+  getNews4Article1(`Sport`);
+  getNews4Article2(`Sport`);
+  getNews4Article3(`Sport`);
+  getNews5Article1(`Sport`);
+  getNews5Article2(`Sport`);
 });
 
 btnNavigationLinkOpinion.addEventListener("click", function (e) {
   e.preventDefault();
   getNews1Article1(`Politics`);
-  // getNews1Article3(`Politics`);
-  // getNews2Container(`Politics`);
-  // getNews3Article1(`Politics`);
-  // getNews3Article2(`Politics`);
-  // getNews4Article1(`Politics`);
-  // getNews4Article2(`Politics`);
-  // getNews4Article3(`Politics`);
-  // getNews5Article1(`Politics`);
-  // getNews5Article2(`Politics`);
+  getNews1Article3(`Politics`);
+  getNews2Container(`Politics`);
+  getNews3Article1(`Politics`);
+  getNews3Article2(`Politics`);
+  getNews4Article1(`Politics`);
+  getNews4Article2(`Politics`);
+  getNews4Article3(`Politics`);
+  getNews5Article1(`Politics`);
+  getNews5Article2(`Politics`);
 });
 
 btnNavigationLinkNews.addEventListener("click", function (e) {
   e.preventDefault();
   getNews1Article1(`News`);
-  // getNews1Article3(`News`);
-  // getNews2Container(`News`);
-  // getNews3Article1(`News`);
-  // getNews3Article2(`News`);
-  // getNews4Article1(`News`);
-  // getNews4Article2(`News`);
-  // getNews4Article3(`News`);
-  // getNews5Article1(`News`);
-  // getNews5Article2(`News`);
+  getNews1Article3(`News`);
+  getNews2Container(`News`);
+  getNews3Article1(`News`);
+  getNews3Article2(`News`);
+  getNews4Article1(`News`);
+  getNews4Article2(`News`);
+  getNews4Article3(`News`);
+  getNews5Article1(`News`);
+  getNews5Article2(`News`);
 });
 
 btnNavigationLinkCulture.addEventListener("click", function (e) {
   e.preventDefault();
   getNews1Article1(`Culture`);
-  // getNews1Article3(`Culture`);
-  // getNews2Container(`Culture`);
-  // getNews3Article1(`Culture`);
-  // getNews3Article2(`Culture`);
-  // getNews4Article1(`Culture`);
-  // getNews4Article2(`Culture`);
-  // getNews4Article3(`Culture`);
-  // getNews5Article1(`Culture`);
-  // getNews5Article2(`Culture`);
+  getNews1Article3(`Culture`);
+  getNews2Container(`Culture`);
+  getNews3Article1(`Culture`);
+  getNews3Article2(`Culture`);
+  getNews4Article1(`Culture`);
+  getNews4Article2(`Culture`);
+  getNews4Article3(`Culture`);
+  getNews5Article1(`Culture`);
+  getNews5Article2(`Culture`);
 });
 
 btnNavigationLinkLifestyle.addEventListener("click", function (e) {
   e.preventDefault();
   getNews1Article1(`Lifestyle`);
-  // getNews1Article3(`Lifestyle`);
-  // getNews2Container(`Lifestyle`);
-  // getNews3Article1(`Lifestyle`);
-  // getNews3Article2(`Lifestyle`);
-  // getNews4Article1(`Lifestyle`);
-  // getNews4Article2(`Lifestyle`);
-  // getNews4Article3(`Lifestyle`);
-  // getNews5Article1(`Lifestyle`);
-  // getNews5Article2(`Lifestyle`);
+  getNews1Article3(`Lifestyle`);
+  getNews2Container(`Lifestyle`);
+  getNews3Article1(`Lifestyle`);
+  getNews3Article2(`Lifestyle`);
+  getNews4Article1(`Lifestyle`);
+  getNews4Article2(`Lifestyle`);
+  getNews4Article3(`Lifestyle`);
+  getNews5Article1(`Lifestyle`);
+  getNews5Article2(`Lifestyle`);
 });
 
 btnNavigationLinkMore.addEventListener("click", function (e) {
   e.preventDefault();
   getNews1Article1(`More`);
-  // getNews1Article3(`More`);
-  // getNews2Container(`More`);
-  // getNews3Article1(`More`);
-  // getNews3Article2(`More`);
-  // getNews4Article1(`More`);
-  // getNews4Article2(`More`);
-  // getNews4Article3(`More`);
-  // getNews5Article1(`More`);
-  // getNews5Article2(`More`);
+  getNews1Article3(`More`);
+  getNews2Container(`More`);
+  getNews3Article1(`More`);
+  getNews3Article2(`More`);
+  getNews4Article1(`More`);
+  getNews4Article2(`More`);
+  getNews4Article3(`More`);
+  getNews5Article1(`More`);
+  getNews5Article2(`More`);
 });
