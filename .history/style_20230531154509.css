@@ -1018,11 +1018,11 @@ a {
 #footer-content-container {
   display: grid;
   grid-template-columns: 1fr;
-  /* grid-template-rows: 0.2fr 1fr; */
+  grid-template-rows: 1fr;
   width: 100%;
   min-width: 304px;
-  max-height: 600px;
-  min-height: 450px;
+  max-height: 700px;
+  min-height: 600px;
   border: solid;
   border-top: none;
   border-bottom: none;
@@ -1036,6 +1036,8 @@ a {
   text-align: center;
   margin-bottom: 5px;
   margin-top: 5px;
+  max-height: 200px;
+  min-height: 100px;
 }
 
 .footer-info {

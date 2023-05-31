@@ -994,8 +994,8 @@ a {
 }
 
 #footer-container {
-  max-height: 700px;
-  min-height: 500px;
+  max-height: 400px;
+  min-height: 250px;
   background-color: #052962;
   border-bottom: dashed;
 }
@@ -1006,8 +1006,8 @@ a {
   transform: translate(-50%);
   max-width: 50%;
   min-width: 800px;
-  max-height: 800px;
-  min-height: 500px;
+  max-height: 400px;
+  min-height: 250px;
   border-left: solid;
   border-right: solid;
   border-bottom: solid;
@@ -1018,11 +1018,11 @@ a {
 #footer-content-container {
   display: grid;
   grid-template-columns: 1fr;
-  /* grid-template-rows: 0.2fr 1fr; */
+  grid-template-rows: 0.2fr 1fr;
   width: 100%;
   min-width: 304px;
-  max-height: 600px;
-  min-height: 450px;
+  max-height: 300px;
+  min-height: 200px;
   border: solid;
   border-top: none;
   border-bottom: none;

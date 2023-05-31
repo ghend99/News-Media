@@ -1021,8 +1021,8 @@ a {
   /* grid-template-rows: 0.2fr 1fr; */
   width: 100%;
   min-width: 304px;
-  max-height: 600px;
-  min-height: 450px;
+  max-height: 500px;
+  min-height: 400px;
   border: solid;
   border-top: none;
   border-bottom: none;
