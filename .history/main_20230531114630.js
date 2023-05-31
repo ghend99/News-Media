@@ -364,18 +364,6 @@ const getNews2Container = function (searchInput) {
                 </div>
               </a>
 
-              <a href="${data.response.results[i + 15].webUrl}" target="_blank">
-              <div id="news2-article1-section2-article1" class="news-container">
-                <img class="news2-article1-section2-thumbnail news2-thumbnail" src="${
-                  data.response.results[i + 15].fields.thumbnail
-                }"" />
-                <p class="news2-article1-section2-header webpage-header">${
-                  data.response.results[i + 15].fields.headline
-                }</p>
-                <p class="news2-article1-section2-author"></p>
-                </div>
-              </a>
-
             </div>
           </div>
           <div id="news2-article2">
@@ -391,7 +379,6 @@ const getNews2Container = function (searchInput) {
               }" />
             </div>
           </a>
-          
 
 <a href="${data.response.results[i + 16].webUrl}" target="_blank">
 <div id="news2-article2-article2" class="news2-article news-container">
@@ -427,7 +414,6 @@ const getNews2Container = function (searchInput) {
                 data.response.results[i + 18].fields.thumbnail
               }" />
             </div>
-            
 </a>
 
       `;

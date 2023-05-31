@@ -485,9 +485,8 @@ a {
 #news2-article1 {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 85px 2fr;
-  max-height: 100%;
-  min-height: 500px;
+  grid-template-rows: 0.5fr 2fr;
+  /* height: 390px; */
   border-right: dashed;
   padding-left: 5px;
   padding-bottom: 5px;
@@ -501,18 +500,38 @@ a {
 #news2-article1-section2 {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr;
+  grid-template-rows: 0.7fr 0.7fr 0.7fr 0.7fr;
 }
 
 .news2-article1-header {
   display: inline-block;
-  max-height: 100px;
-  min-height: 50px;
+  max-height: 150px;
+  min-height: 100px;
   overflow: hidden;
   font-size: 24px;
-  width: 100%;
+  width: 50%;
   margin-top: 4px;
   margin-bottom: 10px;
+}
+
+.news2-article1-thumbnail {
+  position: absolute;
+  width: 12%;
+  left: 26%;
+  top: 10px;
+}
+
+.news2-article1-author {
+  margin-top: 0;
+  font-size: 30px;
+  color: red;
+}
+
+.news2-article1-descprtion {
+  width: 100%;
+  max-height: 180px;
+  min-height: 120px;
+  overflow: hidden;
 }
 
 #news2-article1-section2-article1 {
@@ -576,6 +595,7 @@ a {
 }
 
 #news2-article2-article2 {
+  background-color: #fffacd;
   padding-left: 3px;
   padding-right: 3px;
   border-bottom: dashed;
@@ -586,6 +606,7 @@ a {
   border-right: dashed;
   border-top: dashed;
   border-color: black;
+  background-color: #fffacd;
 }
 
 #news2-article2-article4 {
@@ -1190,25 +1211,21 @@ a {
 
   #news2-article-container {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
     min-height: 1400px;
   }
 
   #news2-container {
-    min-height: 1450px;
+    min-height: 1400px;
   }
 
   #news2-wrapper {
-    min-height: 1450px;
+    min-height: 1400px;
   }
 
   #news2-article1 {
-    min-height: 250px;
+    height: 670px;
     border-right: none;
-  }
-
-  #news2-article1-section2 {
-    height: 100px;
   }
 
   #news2-article2 {
@@ -1226,14 +1243,6 @@ a {
     top: 130px;
     right: 13px;
     width: 35%;
-  }
-
-  .news2-article1-section2-thumbnail {
-    width: 10%;
-  }
-
-  .news2-article1-section2-header {
-    width: 100%;
   }
 
   #news4-container {

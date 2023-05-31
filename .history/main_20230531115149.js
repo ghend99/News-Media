@@ -364,13 +364,13 @@ const getNews2Container = function (searchInput) {
                 </div>
               </a>
 
-              <a href="${data.response.results[i + 15].webUrl}" target="_blank">
+              <a href="${data.response.results[i + 14].webUrl}" target="_blank">
               <div id="news2-article1-section2-article1" class="news-container">
                 <img class="news2-article1-section2-thumbnail news2-thumbnail" src="${
-                  data.response.results[i + 15].fields.thumbnail
+                  data.response.results[i + 14].fields.thumbnail
                 }"" />
                 <p class="news2-article1-section2-header webpage-header">${
-                  data.response.results[i + 15].fields.headline
+                  data.response.results[i + 14].fields.headline
                 }</p>
                 <p class="news2-article1-section2-author"></p>
                 </div>

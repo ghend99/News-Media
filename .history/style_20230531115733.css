@@ -1203,12 +1203,8 @@ a {
   }
 
   #news2-article1 {
-    min-height: 250px;
+    height: 730px;
     border-right: none;
-  }
-
-  #news2-article1-section2 {
-    height: 100px;
   }
 
   #news2-article2 {
@@ -1229,11 +1225,6 @@ a {
   }
 
   .news2-article1-section2-thumbnail {
-    width: 10%;
-  }
-
-  .news2-article1-section2-header {
-    width: 100%;
   }
 
   #news4-container {
