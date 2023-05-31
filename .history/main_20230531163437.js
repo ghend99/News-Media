@@ -125,7 +125,7 @@ const getNews1Article1 = function (searchInput) {
           console.log(`NO THUMBNAIL`);
           news1Thumbnail.src = `images/${notFound.jpg}`;
         }
-
+        console.log(data);
         news1Article1Container.innerHTML = `
         <a href="${data.response.results[i].webUrl}" target="_blank">
           <div id="news1-article1" class="news-container">
@@ -187,7 +187,7 @@ const getNews1Article1 = function (searchInput) {
       }
     })
     .catch(() => {
-      console.log(`Error Caught`);
+      console.error();
     });
 };
 
@@ -235,7 +235,7 @@ const getNews1Article3 = function (searchInput) {
       }
     })
     .catch(() => {
-      console.log(`Error Caught`);
+      console.error();
     });
 };
 
@@ -285,7 +285,7 @@ const getNewHeaders = function (searchInput) {
       }
     })
     .catch(() => {
-      console.log(`Error Caught`);
+      console.error();
     });
 };
 
@@ -443,7 +443,7 @@ const getNews2Container = function (searchInput) {
       }
     })
     .catch(() => {
-      console.log(`Error Caught`);
+      console.error();
     });
 };
 
@@ -514,9 +514,6 @@ const getNews3Article1 = function (searchInput) {
 
       `;
       }
-    })
-    .catch(() => {
-      console.log(`Error Caught`);
     });
 };
 getNews3Article1(`culture`);
@@ -575,9 +572,6 @@ const getNews3Article2 = function (searchInput) {
 
       `;
       }
-    })
-    .catch(() => {
-      console.log(`Error Caught`);
     });
 };
 getNews3Article2(`politics`);
@@ -594,9 +588,6 @@ const getNews4Article1 = function (searchInput) {
       }</p>
       `;
       }
-    })
-    .catch(() => {
-      console.log(`Error Caught`);
     });
 };
 getNews4Article1(`news`);
@@ -659,9 +650,6 @@ const getNews4Article2 = function (searchInput) {
 
       `;
       }
-    })
-    .catch(() => {
-      console.log(`Error Caught`);
     });
 };
 
@@ -725,9 +713,6 @@ const getNews4Article3 = function (searchInput) {
 
 `;
       }
-    })
-    .catch(() => {
-      console.log(`Error Caught`);
     });
 };
 
@@ -781,9 +766,6 @@ const getNews5Article1 = function (searchInput) {
 
 `;
       }
-    })
-    .catch(() => {
-      console.log(`Error Caught`);
     });
 };
 getNews5Article1(`media`);
@@ -813,9 +795,6 @@ const getNews5Article2 = function (searchInput) {
       </a>
       `;
       }
-    })
-    .catch(() => {
-      console.log(`Error Caught`);
     });
 };
 

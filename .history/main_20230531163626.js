@@ -125,7 +125,7 @@ const getNews1Article1 = function (searchInput) {
           console.log(`NO THUMBNAIL`);
           news1Thumbnail.src = `images/${notFound.jpg}`;
         }
-
+        console.log(data);
         news1Article1Container.innerHTML = `
         <a href="${data.response.results[i].webUrl}" target="_blank">
           <div id="news1-article1" class="news-container">
