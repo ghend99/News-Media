@@ -386,8 +386,12 @@ a {
   border-color: red;
 }
 
-.news1-article2-bodyText {
-  display: none;
+.news1-article2-description {
+  width: 100%;
+  max-height: 218px;
+  min-height: 130px;
+  margin-bottom: none;
+  overflow: hidden;
 }
 
 .news1-article3-header {
@@ -1106,21 +1110,6 @@ a {
     margin-top: 0;
     max-width: 40%;
     max-height: 90px;
-  }
-}
-
-@media screen and (min-width: 0) and (max-width: 1778px) {
-  .news1-article2-header {
-    margin-bottom: 0;
-  }
-  .news1-article2-bodyText {
-    display: block;
-    max-height: 75px;
-    min-height: 20px;
-    overflow: hidden;
-    margin-top: 0;
-    color: black;
-    font-size: 10px;
   }
 }
 

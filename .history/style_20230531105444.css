@@ -1110,18 +1110,6 @@ a {
 }
 
 @media screen and (min-width: 0) and (max-width: 1778px) {
-  .news1-article2-header {
-    margin-bottom: 0;
-  }
-  .news1-article2-bodyText {
-    display: block;
-    max-height: 75px;
-    min-height: 20px;
-    overflow: hidden;
-    margin-top: 0;
-    color: black;
-    font-size: 10px;
-  }
 }
 
 @media screen and (min-width: 0) and (max-width: 1681px) {

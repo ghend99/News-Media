@@ -164,9 +164,6 @@ const getNews1Article1 = function (searchInput) {
           <p class="news1-article2-header webpage-header">${
             data.response.results[i + 2].fields.headline
           }</p>
-          <p class="news1-article2-bodyText">${
-            data.response.results[i + 1].fields.bodyText
-          }</p>
         </div>
         </a>
 
@@ -177,9 +174,6 @@ const getNews1Article1 = function (searchInput) {
           }" />
           <p class="news1-article2-header webpage-header">${
             data.response.results[i + 3].fields.headline
-          }</p>
-          <p class="news1-article2-bodyText">${
-            data.response.results[i + 1].fields.bodyText
           }</p>
         </div>
         </a>

@@ -1115,12 +1115,10 @@ a {
   }
   .news1-article2-bodyText {
     display: block;
-    max-height: 75px;
+    max-height: 40px;
     min-height: 20px;
     overflow: hidden;
     margin-top: 0;
-    color: black;
-    font-size: 10px;
   }
 }
 
