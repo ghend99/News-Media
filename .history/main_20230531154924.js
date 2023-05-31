@@ -950,15 +950,15 @@ btnNavigationLinkNews.addEventListener("click", function (e) {
 btnNavigationLinkCulture.addEventListener("click", function (e) {
   e.preventDefault();
   getNews1Article1(`culture`);
-  getNews1Article3(`culture`);
-  getNews2Container(`culture`);
-  getNews3Article1(`culture`);
-  getNews3Article2(`culture`);
-  getNews4Article1(`culture`);
-  getNews4Article2(`culture`);
-  getNews4Article3(`culture`);
-  getNews5Article1(`culture`);
-  getNews5Article2(`culture`);
+  getNews1Article3(`Culture`);
+  getNews2Container(`Culture`);
+  getNews3Article1(`Culture`);
+  getNews3Article2(`Culture`);
+  getNews4Article1(`Culture`);
+  getNews4Article2(`Culture`);
+  getNews4Article3(`Culture`);
+  getNews5Article1(`Culture`);
+  getNews5Article2(`Culture`);
 });
 
 btnNavigationLinkLifestyle.addEventListener("click", function (e) {

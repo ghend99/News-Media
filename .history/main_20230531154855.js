@@ -935,30 +935,30 @@ btnNavigationLinkOpinion.addEventListener("click", function (e) {
 
 btnNavigationLinkNews.addEventListener("click", function (e) {
   e.preventDefault();
-  getNews1Article1(`news`);
-  getNews1Article3(`news`);
-  getNews2Container(`news`);
-  getNews3Article1(`news`);
-  getNews3Article2(`news`);
-  getNews4Article1(`news`);
-  getNews4Article2(`news`);
-  getNews4Article3(`news`);
-  getNews5Article1(`news`);
-  getNews5Article2(`news`);
+  getNews1Article1(`News`);
+  getNews1Article3(`News`);
+  getNews2Container(`News`);
+  getNews3Article1(`News`);
+  getNews3Article2(`News`);
+  getNews4Article1(`News`);
+  getNews4Article2(`News`);
+  getNews4Article3(`News`);
+  getNews5Article1(`News`);
+  getNews5Article2(`News`);
 });
 
 btnNavigationLinkCulture.addEventListener("click", function (e) {
   e.preventDefault();
-  getNews1Article1(`culture`);
-  getNews1Article3(`culture`);
-  getNews2Container(`culture`);
-  getNews3Article1(`culture`);
-  getNews3Article2(`culture`);
-  getNews4Article1(`culture`);
-  getNews4Article2(`culture`);
-  getNews4Article3(`culture`);
-  getNews5Article1(`culture`);
-  getNews5Article2(`culture`);
+  getNews1Article1(`Culture`);
+  getNews1Article3(`Culture`);
+  getNews2Container(`Culture`);
+  getNews3Article1(`Culture`);
+  getNews3Article2(`Culture`);
+  getNews4Article1(`Culture`);
+  getNews4Article2(`Culture`);
+  getNews4Article3(`Culture`);
+  getNews5Article1(`Culture`);
+  getNews5Article2(`Culture`);
 });
 
 btnNavigationLinkLifestyle.addEventListener("click", function (e) {
