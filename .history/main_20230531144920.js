@@ -578,7 +578,7 @@ const getNews4Article1 = function (searchInput) {
       }
     });
 };
-// getNews4Article1(`news`);
+getNews4Article1(`news`);
 
 const getNews4Article2 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=40&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -641,7 +641,7 @@ const getNews4Article2 = function (searchInput) {
     });
 };
 
-// getNews4Article2(`culture`);
+getNews4Article2(`culture`);
 
 const getNews4Article3 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=40&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -704,7 +704,7 @@ const getNews4Article3 = function (searchInput) {
     });
 };
 
-// getNews4Article3(`sport`);
+getNews4Article3(`sport`);
 
 const getNews5Article1 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=45&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -756,7 +756,7 @@ const getNews5Article1 = function (searchInput) {
       }
     });
 };
-// getNews5Article1(`media`);
+getNews5Article1(`media`);
 
 const getNews5Article2 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=45&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -786,7 +786,7 @@ const getNews5Article2 = function (searchInput) {
     });
 };
 
-// getNews5Article2(`sport`);
+getNews5Article2(`sport`);
 
 const section1Container = document.getElementById("news1-container");
 const btnSection1Hide = document.getElementById("news1-container-hide-header");

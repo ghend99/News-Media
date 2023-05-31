@@ -597,8 +597,8 @@ a {
 
 #news3-container {
   display: block;
-  max-height: 455px;
-  min-height: 400px;
+  max-height: 800px;
+  min-height: 620px;
   border-bottom: dashed;
   background-color: #f5f5f5;
 }
@@ -610,8 +610,8 @@ a {
   background-color: white;
   max-width: 50%;
   min-width: 800px;
-  max-height: 455px;
-  min-height: 400px;
+  max-height: 800px;
+  min-height: 617px;
   border-left: dashed;
   border-right: dashed;
   padding-left: 10px;
@@ -624,8 +624,8 @@ a {
   grid-template-rows: 1fr;
   width: 100%;
   min-width: 304px;
-  max-height: 650px;
-  min-height: 550px;
+  max-height: 900px;
+  min-height: 600px;
 }
 
 #news3-article1-container {
@@ -634,8 +634,6 @@ a {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   border-right: dashed;
   border-left: solid;
-  max-height: 452px;
-  min-height: 300px;
 }
 
 #news3-article1 {
@@ -643,21 +641,20 @@ a {
   border-bottom: solid;
   background-color: #052962;
   color: white;
-  max-height: 150px;
-  min-height: 83px;
+  height: 100px;
 }
 
 .news3-article1-topic {
   color: #c70000;
   margin-bottom: 3px;
   margin-top: 5px;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .news3-aticle1-header {
   margin-top: 5px;
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 20px;
   height: 50px;
   overflow: hidden;
   color: white;
@@ -668,8 +665,6 @@ a {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   padding-left: 3px;
-  max-height: 200px;
-  min-height: 100px;
 }
 
 /* .news3-article2-header {
@@ -678,20 +673,18 @@ a {
 } */
 
 .news3-article2 {
-  display: flex;
   border-bottom: solid;
   padding-top: 3px;
   border-color: black;
-  max-height: 120px;
+  max-height: 150px;
   min-height: 100px;
 }
 
 .news3-article2-header {
-  display: inline-block;
   margin-top: 3px;
   margin-bottom: 3px;
   font-size: 20px;
-  max-height: 80px;
+  max-height: 60px;
   min-height: 20px;
   overflow: hidden;
 }

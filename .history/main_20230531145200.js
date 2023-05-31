@@ -504,7 +504,7 @@ const getNews3Article1 = function (searchInput) {
       }
     });
 };
-getNews3Article1(`culture`);
+// getNews3Article1(`culture`);
 
 const getNews3Article2 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -578,7 +578,7 @@ const getNews4Article1 = function (searchInput) {
       }
     });
 };
-// getNews4Article1(`news`);
+getNews4Article1(`news`);
 
 const getNews4Article2 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=40&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -641,7 +641,7 @@ const getNews4Article2 = function (searchInput) {
     });
 };
 
-// getNews4Article2(`culture`);
+getNews4Article2(`culture`);
 
 const getNews4Article3 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=40&show-blocks=all&api-key=${apiKey}&show-fields=all`;
