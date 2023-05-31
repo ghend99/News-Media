@@ -994,16 +994,16 @@ btnNavigationLinkCulture.addEventListener("click", function (e) {
 
 btnNavigationLinkWorld.addEventListener("click", function (e) {
   e.preventDefault();
-  getNews1Article1(`business`);
-  getNews1Article3(`business`);
-  getNews2Container(`business`);
-  getNews3Article1(`business`);
-  getNews3Article2(`business`);
-  getNews4Article1(`business`);
-  getNews4Article2(`business`);
-  getNews4Article3(`business`);
-  getNews5Article1(`business`);
-  getNews5Article2(`business`);
+  getNews1Article1(`world`);
+  getNews1Article3(`world`);
+  getNews2Container(`world`);
+  getNews3Article1(`world`);
+  getNews3Article2(`world`);
+  getNews4Article1(`world`);
+  getNews4Article2(`world`);
+  getNews4Article3(`world`);
+  getNews5Article1(`world`);
+  getNews5Article2(`world`);
 });
 
 btnNavigationLinkMore.addEventListener("click", function (e) {
