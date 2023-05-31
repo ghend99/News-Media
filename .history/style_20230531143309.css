@@ -699,7 +699,7 @@ a {
 
 #news4-container {
   display: block;
-  max-height: 550px;
+  max-height: 600px;
   min-height: 500px;
   border-bottom: dashed;
   background-color: #f2f2f2;
@@ -711,8 +711,8 @@ a {
   transform: translate(-50%);
   max-width: 50%;
   min-width: 800px;
-  max-height: 550px;
-  min-height: 500px;
+  max-height: 680px;
+  min-height: 550px;
   border-left: dashed;
   border-right: dashed;
   padding-left: 10px;
@@ -1275,13 +1275,13 @@ a {
     width: 100%;
   }
 
-  /* #news4-container {
+  #news4-container {
     min-height: 500px;
   }
 
   #news4-wrapper {
     min-height: 550px;
-  } */
+  }
 
   /* #news4-article-container {
     min-height: 200px;

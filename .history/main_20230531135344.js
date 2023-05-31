@@ -652,7 +652,7 @@ const getNews4Article3 = function (searchInput) {
         news4Article3Contianer.innerHTML = `
 
       <a href="${data.response.results[i + 34].webUrl}" target="_blank">
-      <div id="news4-article3-article1" class="news-container news4-article2-article">
+      <div id="news4-article3-article1" class="news-container">
               <img class="news4-article3-thumbnail news4-thumbnail" src="${
                 data.response.results[i + 34].fields.thumbnail
               }" />
@@ -664,7 +664,7 @@ const getNews4Article3 = function (searchInput) {
       </a>
 
 <a href="${data.response.results[i + 35].webUrl}" target="_blank">
-<div id="news4-article3-article2" class="news-container news4-article2-article">
+<div id="news4-article3-article2" class="news-container">
               <img class="news4-article3-thumbnail news4-thumbnail" src="${
                 data.response.results[i + 35].fields.thumbnail
               }"  />
@@ -676,7 +676,7 @@ const getNews4Article3 = function (searchInput) {
 </a>
 
 <a href="${data.response.results[i + 36].webUrl}" target="_blank">
-<div id="news4-article3-article3" class="news-container news4-article2-article">
+<div id="news4-article3-article3" class="news-container">
               <img class="news4-article3-thumbnail news4-thumbnail" src="${
                 data.response.results[i + 36].fields.thumbnail
               }" />
@@ -688,7 +688,7 @@ const getNews4Article3 = function (searchInput) {
 </a>
 
 <a href="${data.response.results[i + 37].webUrl}" target="_blank">
-<div id="news4-article3-article4" class="news-container news4-article2-article">
+<div id="news4-article3-article4" class="news-container">
               <img class="news4-article3-thumbnail news4-thumbnail" src="${
                 data.response.results[i + 37].fields.thumbnail
               }" />

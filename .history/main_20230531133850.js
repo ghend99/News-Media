@@ -364,13 +364,13 @@ const getNews2Container = function (searchInput) {
                 </div>
               </a>
 
-              <a href="${data.response.results[i + 16].webUrl}" target="_blank">
+              <a href="${data.response.results[i + 15].webUrl}" target="_blank">
               <div id="news2-article1-section2-article1" class="news-container">
                 <img class="news2-article1-section2-thumbnail news2-thumbnail" src="${
-                  data.response.results[i + 16].fields.thumbnail
+                  data.response.results[i + 15].fields.thumbnail
                 }"" />
                 <p class="news2-article1-section2-header webpage-header">${
-                  data.response.results[i + 16].fields.headline
+                  data.response.results[i + 15].fields.headline
                 }</p>
                 <p class="news2-article1-section2-author"></p>
                 </div>
@@ -380,51 +380,51 @@ const getNews2Container = function (searchInput) {
           </div>
           <div id="news2-article2">
 
-      <a href="${data.response.results[i + 17].webUrl}" target="_blank">
+      <a href="${data.response.results[i + 15].webUrl}" target="_blank">
           <div id="news2-article2-article1" class="news2-article news-container">
               <p class="news2-article2-header webpage-header news2-article-blue">${
-                data.response.results[i + 17].fields.headline
+                data.response.results[i + 15].fields.headline
               }</p>
               <p class="news2-article2-date news2-article-blue">${date1}</p>
               <img class="news2-article2-thumbnail news2-thumbnail" src="${
-                data.response.results[i + 17].fields.thumbnail
+                data.response.results[i + 15].fields.thumbnail
               }" />
             </div>
           </a>
           
 
-<a href="${data.response.results[i + 18].webUrl}" target="_blank">
+<a href="${data.response.results[i + 16].webUrl}" target="_blank">
 <div id="news2-article2-article2" class="news2-article news-container">
               <p class="news2-article2-header webpage-header">${
-                data.response.results[i + 18].fields.headline
+                data.response.results[i + 16].fields.headline
               }</p>
               <p class="news2-article2-date">${date2}</p>
               <img class="news2-article2-thumbnail news2-thumbnail" src="${
-                data.response.results[i + 18].fields.thumbnail
+                data.response.results[i + 16].fields.thumbnail
               }" />
             </div>
 </a>
 
-<a href="${data.response.results[i + 19].webUrl}" target="_blank">
+<a href="${data.response.results[i + 17].webUrl}" target="_blank">
 <div id="news2-article2-article3" class="news2-article news-container">
               <p class="news2-article2-header webpage-header">${
-                data.response.results[i + 19].fields.headline
+                data.response.results[i + 17].fields.headline
               }</p>
               <p class="news2-article2-date">${date3}</p>
               <img class="news2-article2-thumbnail news2-thumbnail" src="${
-                data.response.results[i + 19].fields.thumbnail
+                data.response.results[i + 17].fields.thumbnail
               }" />
             </div>
 </a>
 
-<a href="${data.response.results[i + 20].webUrl}" target="_blank">
+<a href="${data.response.results[i + 18].webUrl}" target="_blank">
 <div id="news2-article2-article4" class="news2-article news-container">
               <p class="news2-article2-header webpage-header news2-article-blue">${
-                data.response.results[i + 20].fields.headline
+                data.response.results[i + 18].fields.headline
               }</p>
               <p class="news2-article2-date news2-article-blue">${date4}</p>
               <img class="news2-article2-thumbnail news2-thumbnail" src="${
-                data.response.results[i + 20].fields.thumbnail
+                data.response.results[i + 18].fields.thumbnail
               }" />
             </div>
             
@@ -445,15 +445,37 @@ const getNews3Article1 = function (searchInput) {
       for (let i = 0; i < data.response.results.length; i++) {
         news3Article1Container.innerHTML = `
 
-<a href="${data.response.results[i + 21].webUrl}" target="_blank">
+<a href="${data.response.results[i + 19].webUrl}" target="_blank">
 <div id="news3-article1" class="news-container">
               <p class="news3-article1-topic webpage-header">${
-                data.response.results[i + 21].pillarName
+                data.response.results[i + 19].pillarName
               }</p>
               <p class="news3-aticle1-header news-header webpage-header">${
-                data.response.results[i + 21].fields.headline
+                data.response.results[i + 19].fields.headline
               }</p>
             </div>
+</a>
+
+<a href="${data.response.results[i + 20].webUrl}" target="_blank">
+<div id="news3-article1" class="news-container">
+            <p class="news3-article1-topic webpage-header">${
+              data.response.results[i + 20].pillarName
+            }</p>
+            <p class="news3-aticle1-header webpage-header">${
+              data.response.results[i + 20].fields.headline
+            }</p>
+          </div>
+</a>
+
+<a href="${data.response.results[i + 21].webUrl}" target="_blank">
+ <div id="news3-article1" class="news-container">
+            <p class="news3-article1-topic webpage-header">${
+              data.response.results[i + 21].pillarName
+            }</p>
+            <p class="news3-aticle1-header webpage-header">${
+              data.response.results[i + 21].fields.headline
+            }</p>
+          </div>
 </a>
 
 <a href="${data.response.results[i + 22].webUrl}" target="_blank">
@@ -468,34 +490,12 @@ const getNews3Article1 = function (searchInput) {
 </a>
 
 <a href="${data.response.results[i + 23].webUrl}" target="_blank">
- <div id="news3-article1" class="news-container">
+<div id="news3-article1" class="news-container">
             <p class="news3-article1-topic webpage-header">${
               data.response.results[i + 23].pillarName
             }</p>
             <p class="news3-aticle1-header webpage-header">${
               data.response.results[i + 23].fields.headline
-            }</p>
-          </div>
-</a>
-
-<a href="${data.response.results[i + 24].webUrl}" target="_blank">
-<div id="news3-article1" class="news-container">
-            <p class="news3-article1-topic webpage-header">${
-              data.response.results[i + 24].pillarName
-            }</p>
-            <p class="news3-aticle1-header webpage-header">${
-              data.response.results[i + 24].fields.headline
-            }</p>
-          </div>
-</a>
-
-<a href="${data.response.results[i + 25].webUrl}" target="_blank">
-<div id="news3-article1" class="news-container">
-            <p class="news3-article1-topic webpage-header">${
-              data.response.results[i + 25].pillarName
-            }</p>
-            <p class="news3-aticle1-header webpage-header">${
-              data.response.results[i + 25].fields.headline
             }</p>
           </div>
 </a>
@@ -514,8 +514,30 @@ const getNews3Article2 = function (searchInput) {
       for (let i = 0; i < data.response.results.length; i++) {
         news3Article2Container.innerHTML = `
 
-<a href="${data.response.results[i + 26].webUrl}" target="_blank">
+<a href="${data.response.results[i + 24].webUrl}" target="_blank">
 <div id="news3-article2-article1" class="news3-article2 news-container">
+      <img class="news3-article2-thumbnail news3-thumbnail" src="${
+        data.response.results[i + 24].fields.thumbnail
+      }" />
+      <p class="news3-article2-header webpage-header">${
+        data.response.results[i + 24].fields.headline
+      }</p>
+    </div>
+</a>
+
+<a href="${data.response.results[i + 25].webUrl}" target="_blank">
+<div id="news3-article2-article2" class="news3-article2 news-container">
+      <img class="news3-article2-thumbnail news3-thumbnail" src="${
+        data.response.results[i + 25].fields.thumbnail
+      }"  />
+      <p class="news3-article2-header webpage-header">${
+        data.response.results[i + 25].fields.headline
+      }</p>
+    </div>
+</a>
+
+<a href="${data.response.results[i + 26].webUrl}" target="_blank">
+<div id="news3-article2-article3" class="news3-article2 news-container">
       <img class="news3-article2-thumbnail news3-thumbnail" src="${
         data.response.results[i + 26].fields.thumbnail
       }" />
@@ -525,35 +547,13 @@ const getNews3Article2 = function (searchInput) {
     </div>
 </a>
 
-<a href="${data.response.results[i + 27].webUrl}" target="_blank">
-<div id="news3-article2-article2" class="news3-article2 news-container">
-      <img class="news3-article2-thumbnail news3-thumbnail" src="${
-        data.response.results[i + 27].fields.thumbnail
-      }"  />
-      <p class="news3-article2-header webpage-header">${
-        data.response.results[i + 27].fields.headline
-      }</p>
-    </div>
-</a>
-
-<a href="${data.response.results[i + 28].webUrl}" target="_blank">
-<div id="news3-article2-article3" class="news3-article2 news-container">
-      <img class="news3-article2-thumbnail news3-thumbnail" src="${
-        data.response.results[i + 28].fields.thumbnail
-      }" />
-      <p class="news3-article2-header webpage-header">${
-        data.response.results[i + 28].fields.headline
-      }</p>
-    </div>
-</a>
-
-  <a href="${data.response.results[i + 29].webUrl}" target="_blank">
+  <a href="${data.response.results[i + 27].webUrl}" target="_blank">
   <div id="news3-article2-article4" class="news3-article2 news-container">
       <img class="news3-article2-thumbnail news3-thumbnail" src="${
-        data.response.results[i + 29].fields.thumbnail
+        data.response.results[i + 27].fields.thumbnail
       }" />
       <p class="news3-article2-header webpage-header">${
-        data.response.results[i + 29].fields.headline
+        data.response.results[i + 27].fields.headline
       }</p>
       </div>
   </a>
@@ -572,7 +572,7 @@ const getNews4Article1 = function (searchInput) {
       for (let i = 0; i < data.response.results.length; i++) {
         news4Article1Container.innerHTML = `
       <p class="news4-article1-header webpage-header">${
-        data.response.results[i + 30].pillarName
+        data.response.results[i + 28].pillarName
       }</p>
       `;
       }
@@ -588,49 +588,49 @@ const getNews4Article2 = function (searchInput) {
       for (let i = 0; i < data.response.results.length; i++) {
         news4Article2Container.innerHTML = `
 
-    <a href="${data.response.results[i + 30].webUrl}" target="_blank">
+    <a href="${data.response.results[i + 28].webUrl}" target="_blank">
     <div id="news4-article2-article1" class="news-container news4-article2-article">
               <img class="news4-article2-thumbnail news4-thumbnail" class="news4-article2" src="${
-                data.response.results[i + 30].fields.thumbnail
+                data.response.results[i + 28].fields.thumbnail
               }"/>
               <p class="news4-article2-header webpage-header">${
-                data.response.results[i + 30].fields.headline
+                data.response.results[i + 28].fields.headline
               }</p>
               <p class="news4-article2-description"></p>
             </div>
     </a>
 
-<a href="${data.response.results[i + 31].webUrl}" target="_blank">
+<a href="${data.response.results[i + 29].webUrl}" target="_blank">
 <div id="news4-article2-article2" class="news-container news4-article2-article">
+              <img class="news4-article2-thumbnail news4-thumbnail" class="news4-article2" src="${
+                data.response.results[i + 29].fields.thumbnail
+              }" />
+              <p class="news4-article2-header webpage-header">${
+                data.response.results[i + 29].fields.headline
+              }</p>
+              <p class="news4-article2-description"></p>
+            </div>
+</a>
+
+<a href="${data.response.results[i + 30].webUrl}" target="_blank">
+<div id="news4-article2-article3" class="news-container news4-article2-article">
+              <img class="news4-article2-thumbnail news4-thumbnail" class="news4-article2" src="${
+                data.response.results[i + 30].fields.thumbnail
+              }" />
+              <p class="news4-article2-header webpage-header">${
+                data.response.results[i + 30].fields.headline
+              }</p>
+              <p class="news4-article2-description"></p>
+            </div>
+</a>
+
+<a href="${data.response.results[i + 31].webUrl}" target="_blank">
+<div id="news4-article2-article4" class="news-container news4-article2-article">
               <img class="news4-article2-thumbnail news4-thumbnail" class="news4-article2" src="${
                 data.response.results[i + 31].fields.thumbnail
               }" />
               <p class="news4-article2-header webpage-header">${
                 data.response.results[i + 31].fields.headline
-              }</p>
-              <p class="news4-article2-description"></p>
-            </div>
-</a>
-
-<a href="${data.response.results[i + 32].webUrl}" target="_blank">
-<div id="news4-article2-article3" class="news-container news4-article2-article">
-              <img class="news4-article2-thumbnail news4-thumbnail" class="news4-article2" src="${
-                data.response.results[i + 32].fields.thumbnail
-              }" />
-              <p class="news4-article2-header webpage-header">${
-                data.response.results[i + 32].fields.headline
-              }</p>
-              <p class="news4-article2-description"></p>
-            </div>
-</a>
-
-<a href="${data.response.results[i + 33].webUrl}" target="_blank">
-<div id="news4-article2-article4" class="news-container news4-article2-article">
-              <img class="news4-article2-thumbnail news4-thumbnail" class="news4-article2" src="${
-                data.response.results[i + 33].fields.thumbnail
-              }" />
-              <p class="news4-article2-header webpage-header">${
-                data.response.results[i + 33].fields.headline
               }</p>
               <p class="news4-article2-description"></p>
             </div>
@@ -651,8 +651,32 @@ const getNews4Article3 = function (searchInput) {
       for (let i = 0; i < data.response.results.length; i++) {
         news4Article3Contianer.innerHTML = `
 
-      <a href="${data.response.results[i + 34].webUrl}" target="_blank">
-      <div id="news4-article3-article1" class="news-container news4-article2-article">
+      <a href="${data.response.results[i + 32].webUrl}" target="_blank">
+      <div id="news4-article3-article1" class="news-container">
+              <img class="news4-article3-thumbnail news4-thumbnail" src="${
+                data.response.results[i + 32].fields.thumbnail
+              }" />
+              <p class="news4-article3-header webpage-header">${
+                data.response.results[i + 32].fields.headline
+              }</p>
+              <p class="news4-article3-description"></p>
+            </div>
+      </a>
+
+<a href="${data.response.results[i + 33].webUrl}" target="_blank">
+<div id="news4-article3-article2" class="news-container">
+              <img class="news4-article3-thumbnail news4-thumbnail" src="${
+                data.response.results[i + 33].fields.thumbnail
+              }"  />
+              <p class="news4-article3-header webpage-header">${
+                data.response.results[i + 33].fields.headline
+              }</p>
+              <p class="news4-article2-description"></p>
+            </div>
+</a>
+
+<a href="${data.response.results[i + 34].webUrl}" target="_blank">
+<div id="news4-article3-article3" class="news-container">
               <img class="news4-article3-thumbnail news4-thumbnail" src="${
                 data.response.results[i + 34].fields.thumbnail
               }" />
@@ -661,39 +685,15 @@ const getNews4Article3 = function (searchInput) {
               }</p>
               <p class="news4-article3-description"></p>
             </div>
-      </a>
+</a>
 
 <a href="${data.response.results[i + 35].webUrl}" target="_blank">
-<div id="news4-article3-article2" class="news-container news4-article2-article">
+<div id="news4-article3-article4" class="news-container">
               <img class="news4-article3-thumbnail news4-thumbnail" src="${
                 data.response.results[i + 35].fields.thumbnail
-              }"  />
+              }" />
               <p class="news4-article3-header webpage-header">${
                 data.response.results[i + 35].fields.headline
-              }</p>
-              <p class="news4-article2-description"></p>
-            </div>
-</a>
-
-<a href="${data.response.results[i + 36].webUrl}" target="_blank">
-<div id="news4-article3-article3" class="news-container news4-article2-article">
-              <img class="news4-article3-thumbnail news4-thumbnail" src="${
-                data.response.results[i + 36].fields.thumbnail
-              }" />
-              <p class="news4-article3-header webpage-header">${
-                data.response.results[i + 36].fields.headline
-              }</p>
-              <p class="news4-article3-description"></p>
-            </div>
-</a>
-
-<a href="${data.response.results[i + 37].webUrl}" target="_blank">
-<div id="news4-article3-article4" class="news-container news4-article2-article">
-              <img class="news4-article3-thumbnail news4-thumbnail" src="${
-                data.response.results[i + 37].fields.thumbnail
-              }" />
-              <p class="news4-article3-header webpage-header">${
-                data.response.results[i + 37].fields.headline
               }</p>
               <p class="news4-article3-description"></p>
             </div>
@@ -707,7 +707,7 @@ const getNews4Article3 = function (searchInput) {
 getNews4Article3(`sport`);
 
 const getNews5Article1 = function (searchInput) {
-  let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=45&show-blocks=all&api-key=${apiKey}&show-fields=all`;
+  let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=40&show-blocks=all&api-key=${apiKey}&show-fields=all`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
@@ -718,6 +718,28 @@ const getNews5Article1 = function (searchInput) {
           news5Thumbnail.src = "images/notFound.jpg";
         }
         news5Article1Container.innerHTML = `
+
+<a href="${data.response.results[i + 36].webUrl}" target="_blank">
+<div id="news5-article1-article" class="news-container">
+              <p class="news5-article1-header webpage-header">${
+                data.response.results[i + 36].fields.headline
+              }</p>
+              <img class="news5-article1-thumbnail news5-thumbnail" src="${
+                data.response.results[i + 36].fields.thumbnail
+              }" />
+            </div>
+</a>
+
+<a href="${data.response.results[i + 37].webUrl}" target="_blank">
+<div id="news5-article1-article" class="news-container">
+              <p class="news5-article1-header webpage-header">${
+                data.response.results[i + 37].fields.headline
+              }</p>
+              <img class="news5-article1-thumbnail news5-thumbnail" src="${
+                data.response.results[i + 37].fields.thumbnail
+              }" />
+            </div>
+</a>
 
 <a href="${data.response.results[i + 38].webUrl}" target="_blank">
 <div id="news5-article1-article" class="news-container">
@@ -730,28 +752,6 @@ const getNews5Article1 = function (searchInput) {
             </div>
 </a>
 
-<a href="${data.response.results[i + 39].webUrl}" target="_blank">
-<div id="news5-article1-article" class="news-container">
-              <p class="news5-article1-header webpage-header">${
-                data.response.results[i + 39].fields.headline
-              }</p>
-              <img class="news5-article1-thumbnail news5-thumbnail" src="${
-                data.response.results[i + 39].fields.thumbnail
-              }" />
-            </div>
-</a>
-
-<a href="${data.response.results[i + 40].webUrl}" target="_blank">
-<div id="news5-article1-article" class="news-container">
-              <p class="news5-article1-header webpage-header">${
-                data.response.results[i + 40].fields.headline
-              }</p>
-              <img class="news5-article1-thumbnail news5-thumbnail" src="${
-                data.response.results[i + 40].fields.thumbnail
-              }" />
-            </div>
-</a>
-
 `;
       }
     });
@@ -759,7 +759,7 @@ const getNews5Article1 = function (searchInput) {
 getNews5Article1(`media`);
 
 const getNews5Article2 = function (searchInput) {
-  let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=45&show-blocks=all&api-key=${apiKey}&show-fields=all`;
+  let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=40&show-blocks=all&api-key=${apiKey}&show-fields=all`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
@@ -770,15 +770,15 @@ const getNews5Article2 = function (searchInput) {
           news5Thumbnail.src = "images/notFound.jpg";
         }
         news5Article2Container.innerHTML = `
-      <a href="${data.response.results[i + 41].webUrl}" target="_blank">
+      <a href="${data.response.results[i + 39].webUrl}" target="_blank">
       <img class="news5-article2-thumbnail news5-thumbnail" src="${
-        data.response.results[i + 41].fields.thumbnail
+        data.response.results[i + 39].fields.thumbnail
       }" />
       <p class="news5-article2-header webpage-header">${
-        data.response.results[i + 41].fields.headline
+        data.response.results[i + 39].fields.headline
       }</p>
       <p class="news5-article2-bodyText">${
-        data.response.results[i + 41].fields.bodyText
+        data.response.results[i + 39].fields.bodyText
       }</p>
       </a>
       `;
@@ -907,16 +907,16 @@ const btnNavigationLinkMore = document.getElementById("navigation-link-more");
 
 btnNavigationLinkSport.addEventListener("click", function (e) {
   e.preventDefault();
-  getNews1Article1(`sport`);
+  getNews1Article1(`Sport`);
   getNews1Article3(`Sport`);
-  getNews2Container(`sport`);
-  getNews3Article1(`sport`);
-  getNews3Article2(`sport`);
-  getNews4Article1(`sport`);
-  getNews4Article2(`sport`);
-  getNews4Article3(`sport`);
-  getNews5Article1(`sport`);
-  getNews5Article2(`sport`);
+  getNews2Container(`Sport`);
+  getNews3Article1(`Sport`);
+  getNews3Article2(`Sport`);
+  getNews4Article1(`Sport`);
+  getNews4Article2(`Sport`);
+  getNews4Article3(`Sport`);
+  getNews5Article1(`Sport`);
+  getNews5Article2(`Sport`);
 });
 
 btnNavigationLinkOpinion.addEventListener("click", function (e) {
