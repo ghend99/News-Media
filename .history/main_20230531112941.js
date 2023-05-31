@@ -188,7 +188,7 @@ const getNews1Article1 = function (searchInput) {
     });
 };
 
-getNews1Article1(`football`);
+// getNews1Article1(`football`);
 
 const getNews1Article3 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -224,7 +224,9 @@ const getNews1Article3 = function (searchInput) {
       <img class="news1-article3-thumbnail news1-thumbnail" src="${
         data.response.results[i + 5].fields.thumbnail
       }" />
-      
+      <p class="news1-article3-article2-bodyText">${
+        data.response.results[i + 4].fields.bodyText
+      }</p>
     </div>
       </a>
 
