@@ -970,7 +970,7 @@ a {
 .news5-article2-bodyText {
   display: block;
   max-height: 110px;
-  min-height: 100px;
+  min-height: 80px;
   overflow: hidden;
   color: black;
 }
@@ -1689,10 +1689,6 @@ a {
 
   .news5-article2-header {
     width: 100%;
-  }
-
-  .news5-article2-bodyText {
-    display: none;
   }
 
   #footer-wrapper {

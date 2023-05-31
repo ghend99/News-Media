@@ -954,7 +954,7 @@ a {
   padding-left: 3px;
   padding-right: 3px;
   padding-top: 3px;
-  max-height: 380px;
+  max-height: 368px;
   min-height: 100px;
 }
 
@@ -970,7 +970,7 @@ a {
 .news5-article2-bodyText {
   display: block;
   max-height: 110px;
-  min-height: 100px;
+  min-height: 90px;
   overflow: hidden;
   color: black;
 }
@@ -1689,10 +1689,6 @@ a {
 
   .news5-article2-header {
     width: 100%;
-  }
-
-  .news5-article2-bodyText {
-    display: none;
   }
 
   #footer-wrapper {

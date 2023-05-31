@@ -777,9 +777,6 @@ const getNews5Article2 = function (searchInput) {
       <p class="news5-article2-header webpage-header">${
         data.response.results[i + 39].fields.headline
       }</p>
-      <p class="news5-article2-bodyText">${
-        data.response.results[i + 39].fields.bodyText
-      }</p>
       </a>
       `;
       }
