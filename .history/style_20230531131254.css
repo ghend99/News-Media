@@ -1111,7 +1111,7 @@ a {
 
   .news1-article3-bodyText {
     display: block;
-    max-height: 56px;
+    max-height: 100px;
     min-height: 30px;
     overflow: hidden;
     font-size: 10px;
@@ -1164,7 +1164,7 @@ a {
   } */
 
   #news1-article3-container {
-    width: 160px;
+    width: 150px;
   }
 
   .news1-article1-thumbnail {
@@ -1182,10 +1182,6 @@ a {
   }
 
   .news1-article2-bodyText {
-    max-height: 78px;
-  }
-
-  .news1-article3-bodyText {
     max-height: 78px;
   }
 
