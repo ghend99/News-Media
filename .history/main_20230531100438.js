@@ -135,9 +135,6 @@ const getNews1Article1 = function (searchInput) {
             <p class="news1-article1-header webpage-header">${
               data.response.results[i].fields.headline
             }</p>
-            <p class="news1-article1-body-text">${
-              data.response.results[i].fields.bodyText
-            }</p>
           </div>
         </a>
 
@@ -179,7 +176,7 @@ const getNews1Article1 = function (searchInput) {
     });
 };
 
-getNews1Article1(`football`);
+// getNews1Article1(`football`);
 
 const getNews1Article3 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -267,7 +264,7 @@ const getNewHeaders = function (searchInput) {
     });
 };
 
-// getNewHeaders(`film`);
+getNewHeaders(`film`);
 
 const getNews2Container = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;

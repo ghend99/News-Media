@@ -1108,12 +1108,6 @@ a {
   .news1-article1-date {
     top: 30%;
   }
-
-  .news1-article1-body-text {
-    display: block;
-    margin-top: 0;
-    max-width: 40%;
-  }
 }
 
 @media screen and (min-width: 0) and (max-width: 1640px) {

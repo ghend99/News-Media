@@ -135,9 +135,7 @@ const getNews1Article1 = function (searchInput) {
             <p class="news1-article1-header webpage-header">${
               data.response.results[i].fields.headline
             }</p>
-            <p class="news1-article1-body-text">${
-              data.response.results[i].fields.bodyText
-            }</p>
+            <p>${data.response.results[i].fields.headline}</p>
           </div>
         </a>
 

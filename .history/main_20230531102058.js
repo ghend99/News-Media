@@ -129,15 +129,7 @@ const getNews1Article1 = function (searchInput) {
         news1Article1Container.innerHTML = `
         <a href="${data.response.results[i].webUrl}" target="_blank">
           <div id="news1-article1" class="news-container">
-            <img class="news1-article1-thumbnail news1-thumbnail" src="${
-              data.response.results[i].fields.thumbnail
-            }" />
-            <p class="news1-article1-header webpage-header">${
-              data.response.results[i].fields.headline
-            }</p>
-            <p class="news1-article1-body-text">${
-              data.response.results[i].fields.bodyText
-            }</p>
+            
           </div>
         </a>
 

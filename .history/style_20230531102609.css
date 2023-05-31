@@ -331,15 +331,9 @@ a {
 }
 
 .news1-article1-body-text {
-  position: absolute;
-  display: inline-block;
   max-height: 130px;
   min-height: 60px;
   overflow: hidden;
-  max-width: 17%;
-  min-width: 100px;
-  margin-top: 120px;
-  color: black;
 }
 
 .news1-article1-thumbnail {
@@ -1107,12 +1101,6 @@ a {
 @media screen and (min-width: 0) and (max-width: 1923px) {
   .news1-article1-date {
     top: 30%;
-  }
-
-  .news1-article1-body-text {
-    display: block;
-    margin-top: 0;
-    max-width: 40%;
   }
 }
 

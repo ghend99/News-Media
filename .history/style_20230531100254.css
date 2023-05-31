@@ -330,16 +330,12 @@ a {
   max-width: 16%;
 }
 
-.news1-article1-body-text {
+.news1-article1-date {
   position: absolute;
   display: inline-block;
-  max-height: 130px;
-  min-height: 60px;
-  overflow: hidden;
-  max-width: 17%;
-  min-width: 100px;
-  margin-top: 120px;
-  color: black;
+  margin-top: 3px;
+  margin-bottom: 0;
+  top: 25%;
 }
 
 .news1-article1-thumbnail {
@@ -422,7 +418,7 @@ a {
   background-color: #052962;
   border-left: dashed;
   border-right: dashed;
-
+  border-bottom: dashed;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -1108,12 +1104,6 @@ a {
   .news1-article1-date {
     top: 30%;
   }
-
-  .news1-article1-body-text {
-    display: block;
-    margin-top: 0;
-    max-width: 40%;
-  }
 }
 
 @media screen and (min-width: 0) and (max-width: 1640px) {
@@ -1743,7 +1733,6 @@ a {
     min-width: 310px;
     border: none;
     padding: 0;
-    padding-left: 10px;
     /* display: none; */
   }
 

@@ -135,9 +135,6 @@ const getNews1Article1 = function (searchInput) {
             <p class="news1-article1-header webpage-header">${
               data.response.results[i].fields.headline
             }</p>
-            <p class="news1-article1-body-text">${
-              data.response.results[i].fields.bodyText
-            }</p>
           </div>
         </a>
 
@@ -220,7 +217,7 @@ const getNews1Article3 = function (searchInput) {
     });
 };
 
-// getNews1Article3(`football`);
+getNews1Article3(`football`);
 
 const getNewHeaders = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -267,7 +264,7 @@ const getNewHeaders = function (searchInput) {
     });
 };
 
-// getNewHeaders(`film`);
+getNewHeaders(`film`);
 
 const getNews2Container = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -408,7 +405,7 @@ const getNews2Container = function (searchInput) {
     });
 };
 
-// getNews2Container(`politics`);
+getNews2Container(`politics`);
 
 const getNews3Article1 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -477,7 +474,7 @@ const getNews3Article1 = function (searchInput) {
       }
     });
 };
-// getNews3Article1(`culture`);
+getNews3Article1(`culture`);
 
 const getNews3Article2 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -535,7 +532,7 @@ const getNews3Article2 = function (searchInput) {
       }
     });
 };
-// getNews3Article2(`news`);
+getNews3Article2(`news`);
 
 const getNews4Article1 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?q=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=thumbnail&show-fields=all`;
@@ -551,7 +548,7 @@ const getNews4Article1 = function (searchInput) {
       }
     });
 };
-// getNews4Article1(`news`);
+getNews4Article1(`news`);
 
 const getNews4Article2 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=40&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -614,7 +611,7 @@ const getNews4Article2 = function (searchInput) {
     });
 };
 
-// getNews4Article2(`culture`);
+getNews4Article2(`culture`);
 
 const getNews4Article3 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=40&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -677,19 +674,14 @@ const getNews4Article3 = function (searchInput) {
     });
 };
 
-// getNews4Article3(`sport`);
+getNews4Article3(`sport`);
 
 const getNews5Article1 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=40&show-blocks=all&api-key=${apiKey}&show-fields=all`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
-      const news5Thumbnail = document.querySelectorAll(".news5-thumbnail");
       for (let i = 0; i < data.response.results.length; i++) {
-        if (data.response.results[i].fields.thumbnail === undefined) {
-          console.log(`NO THUMBNAIL`);
-          news5Thumbnail.src = "images/notFound.jpg";
-        }
         news5Article1Container.innerHTML = `
 
 <a href="${data.response.results[i + 36].webUrl}" target="_blank">
@@ -697,7 +689,7 @@ const getNews5Article1 = function (searchInput) {
               <p class="news5-article1-header webpage-header">${
                 data.response.results[i + 36].fields.headline
               }</p>
-              <img class="news5-article1-thumbnail news5-thumbnail" src="${
+              <img class="news5-article1-thumbnail" src="${
                 data.response.results[i + 36].fields.thumbnail
               }" />
             </div>
@@ -708,7 +700,7 @@ const getNews5Article1 = function (searchInput) {
               <p class="news5-article1-header webpage-header">${
                 data.response.results[i + 37].fields.headline
               }</p>
-              <img class="news5-article1-thumbnail news5-thumbnail" src="${
+              <img class="news5-article1-thumbnail" src="${
                 data.response.results[i + 37].fields.thumbnail
               }" />
             </div>
@@ -719,7 +711,7 @@ const getNews5Article1 = function (searchInput) {
               <p class="news5-article1-header webpage-header">${
                 data.response.results[i + 38].fields.headline
               }</p>
-              <img class="news5-article1-thumbnail news5-thumbnail" src="${
+              <img class="news5-article1-thumbnail" src="${
                 data.response.results[i + 38].fields.thumbnail
               }" />
             </div>
@@ -729,22 +721,21 @@ const getNews5Article1 = function (searchInput) {
       }
     });
 };
-// getNews5Article1(`news`);
+getNews5Article1(`news`);
 
 const getNews5Article2 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=40&show-blocks=all&api-key=${apiKey}&show-fields=all`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
-      const news5Thumbnail = document.querySelectorAll(".news5-thumbnail");
       for (let i = 0; i < data.response.results.length; i++) {
         if (data.response.results[i].fields.thumbnail === undefined) {
           console.log(`NO THUMBNAIL`);
-          news5Thumbnail.src = "images/notFound.jpg";
+          news1Thumbnail.src = `images/${notFound.jpg}`;
         }
         news5Article2Container.innerHTML = `
       <a href="${data.response.results[i + 39].webUrl}" target="_blank">
-      <img class="news5-article2-thumbnail news5-thumbnail" src="${
+      <img class="news5-article2-thumbnail" src="${
         data.response.results[i + 39].fields.thumbnail
       }" />
       <p class="news5-article2-header webpage-header">${
@@ -756,7 +747,7 @@ const getNews5Article2 = function (searchInput) {
     });
 };
 
-// getNews5Article2(`news`);
+getNews5Article2(`news`);
 
 const section1Container = document.getElementById("news1-container");
 const btnSection1Hide = document.getElementById("news1-container-hide-header");
