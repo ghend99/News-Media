@@ -548,7 +548,7 @@ const getNews3Article2 = function (searchInput) {
       }
     });
 };
-getNews3Article2(`politics`);
+getNews3Article2(`news`);
 
 const getNews4Article1 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?q=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=thumbnail&show-fields=all`;
@@ -742,7 +742,7 @@ const getNews5Article1 = function (searchInput) {
       }
     });
 };
-getNews5Article1(`media`);
+getNews5Article1(`news`);
 
 const getNews5Article2 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=40&show-blocks=all&api-key=${apiKey}&show-fields=all`;
