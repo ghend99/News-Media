@@ -1629,8 +1629,6 @@ a {
   .news4-article1-header {
     font-size: 30px;
     margin: 10px;
-    overflow: hidden;
-    height: fit-content;
   }
 
   #news4-article2-article2 {
@@ -1638,7 +1636,7 @@ a {
   }
 
   .news4-article2-header {
-    height: fit-content;
+    height: 80px;
     overflow: hidden;
   }
 
