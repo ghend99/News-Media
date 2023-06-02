@@ -1971,7 +1971,7 @@ a {
   }
 
   .news3-article2-thumbnail {
-    width: 25%;
+    width: 29%;
   }
 
   .news3-article2-header {
@@ -1983,17 +1983,13 @@ a {
     margin-top: 3px;
   }
 
-  #news3-article2-article4 {
-    border-bottom: none;
-  }
-
   #news4-container {
-    min-height: 1104px;
+    min-height: 1120px;
   }
 
   #news4-wrapper {
     min-width: 360px;
-    min-height: 1104px;
+    min-height: 880px;
     border: none;
     padding: 0;
     border-right: dashed;
