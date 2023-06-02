@@ -945,7 +945,7 @@ a {
 
 .news5-article1-header {
   display: inline-block;
-  height: fit-content;
+  height: 180px;
   overflow: hidden;
   font-size: 24px;
   width: 90%;
