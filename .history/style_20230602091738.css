@@ -987,11 +987,10 @@ a {
 
 .news5-article2-bodyText {
   display: block;
-  max-height: 50px;
-  min-height: 20px;
+  max-height: 90px;
+  min-height: 70px;
   overflow: hidden;
   color: black;
-  margin-top: 5px;
 }
 
 #footer-container {
