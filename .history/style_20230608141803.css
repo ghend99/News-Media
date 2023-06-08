@@ -1500,7 +1500,7 @@ a {
 
   #news2-article1 {
     grid-template-rows: 0fr 1fr;
-    height: 620px;
+    height: 580px;
     border-bottom: dashed;
     border-right: none;
     margin-bottom: 10px;

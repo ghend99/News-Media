@@ -1482,12 +1482,12 @@ a {
   }
 
   #news2-container {
-    min-height: 1140px;
+    min-height: 1160px;
   }
 
   #news2-wrapper {
     min-width: 400px;
-    min-height: 1140px;
+    min-height: 1160px;
   }
 
   .news2-article {
@@ -1553,22 +1553,6 @@ a {
 
   .news2-article1-author {
     display: none;
-  }
-
-  #news2-article2-article1 {
-    height: 240px;
-  }
-
-  #news2-article2-article2 {
-    height: 240px;
-  }
-
-  #news2-article2-article3 {
-    height: 232px;
-  }
-
-  #news2-article2-article4 {
-    height: 232px;
   }
 
   #news3-container {
