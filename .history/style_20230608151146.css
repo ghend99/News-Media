@@ -1578,7 +1578,7 @@ a {
 
   #news3-wrapper {
     min-width: 400px;
-    min-height: 1000px;
+    min-height: 930px;
   }
 
   #news3-article-container {
@@ -1597,7 +1597,6 @@ a {
 
   #news3-article2-container {
     height: 285px;
-    margin-top: 10px;
   }
 
   .news3-article2-header {
