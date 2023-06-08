@@ -1670,17 +1670,17 @@ a {
 
   #news5-wrapper {
     min-width: 400px;
-    min-height: 770px;
+    min-height: 960px;
   }
 
   #news5-container {
-    min-height: 770px;
+    min-height: 960px;
   }
 
   #news5-article-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    height: 770px;
+    /* height: 800px; */
   }
 
   #news5-article1-container {
