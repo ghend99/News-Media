@@ -1410,9 +1410,9 @@ a {
     border-color: black;
   }
 
-  .news1-article2 {
-    min-height: 210px;
-  }
+  /* #news1-article2{
+    display: none;
+  } */
 
   .news1-article1-thumbnail {
     width: 100%;
