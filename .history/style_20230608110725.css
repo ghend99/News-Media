@@ -171,8 +171,8 @@ a {
   transform: translate(-50%);
   max-width: 50%;
   min-width: 800px;
-  max-height: 550px;
-  min-height: 520px;
+  max-height: 500px;
+  min-height: 500px;
   border-left: dashed;
   border-right: dashed;
   padding-left: 10px;
@@ -408,7 +408,7 @@ a {
   border-bottom: dashed;
   border-color: black;
   max-height: 100%;
-  min-height: 267px;
+  min-height: 260px;
 }
 
 #news-headers {

@@ -171,8 +171,8 @@ a {
   transform: translate(-50%);
   max-width: 50%;
   min-width: 800px;
-  max-height: 550px;
-  min-height: 520px;
+  max-height: 500px;
+  min-height: 500px;
   border-left: dashed;
   border-right: dashed;
   padding-left: 10px;
