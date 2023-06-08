@@ -568,7 +568,7 @@ a {
 #news2-article2-article1 {
   /* background-color: #052962; */
   border-right: dashed;
-  /* border-bottom: dashed; */
+  border-bottom: dashed;
   padding-left: 3px;
   padding-right: 3px;
   color: white;
@@ -579,7 +579,7 @@ a {
 #news2-article2-article2 {
   padding-left: 3px;
   padding-right: 3px;
-  /* border-bottom: dashed; */
+  border-bottom: dashed;
   border-color: black;
   height: 303px;
 }
