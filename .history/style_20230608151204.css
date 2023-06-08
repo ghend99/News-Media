@@ -1968,14 +1968,14 @@ a {
   }
 
   #news3-container {
-    min-height: 1000px;
+    min-height: 930px;
   }
 
   #news3-wrapper {
     min-width: 360px;
     border: none;
     padding: 0;
-    min-height: 1000px;
+    min-height: 930px;
     border-left: dashed;
     border-right: dashed;
   }
@@ -1995,12 +1995,11 @@ a {
   }
 
   .news3-article2-thumbnail {
-    width: 50%;
-    margin-right: 3px;
+    width: 25%;
   }
 
   .news3-article2-header {
-    height: 175px;
+    height: 55px;
     margin-bottom: 3px;
   }
 

@@ -583,7 +583,7 @@ const getNews3Article2 = async function (searchInput) {
 getNews3Article2(`politics`);
 
 const getNews4Article1 = async function (searchInput) {
-  let url = `https://content.guardianapis.com/search?q=${searchInput}&page-size=40&show-blocks=all&api-key=${apiKey}&show-fields=thumbnail&show-fields=all`;
+  let url = `https://content.guardianapis.com/search?q=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=thumbnail&show-fields=all`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
