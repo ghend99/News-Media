@@ -946,7 +946,7 @@ a {
 
 .news5-article1-header {
   display: inline-block;
-  height: 170px;
+  height: 200px;
   overflow: hidden;
   font-size: 24px;
   width: 90%;
@@ -956,8 +956,8 @@ a {
 }
 
 .news5-article1-thumbnail {
+  position: relative;
   width: 100%;
-  margin-top: 40px;
 }
 
 .news5-article1-description {

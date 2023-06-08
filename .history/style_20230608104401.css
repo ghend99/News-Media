@@ -940,13 +940,13 @@ a {
   border-right: solid;
   border-color: white;
   padding-left: 3px;
-  padding-right: 6px;
   background-color: #052962;
 }
 
 .news5-article1-header {
   display: inline-block;
-  height: 170px;
+  max-height: 100%;
+  min-height: 160px;
   overflow: hidden;
   font-size: 24px;
   width: 90%;
@@ -957,7 +957,6 @@ a {
 
 .news5-article1-thumbnail {
   width: 100%;
-  margin-top: 40px;
 }
 
 .news5-article1-description {
