@@ -629,7 +629,7 @@ a {
   width: 100%;
   min-width: 304px;
   max-height: 650px;
-  min-height: 350px;
+  min-height: 550px;
 }
 
 #news3-article1-container {
@@ -684,7 +684,8 @@ a {
 .news3-article2 {
   display: flex;
   border-bottom: solid;
-
+  padding-top: 3px;
+  padding-bottom: 3px;
   border-color: black;
   max-height: 120px;
   min-height: 100px;
