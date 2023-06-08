@@ -2040,7 +2040,7 @@ a {
 
   #news5-wrapper {
     min-width: 360px;
-    min-height: 740px;
+    min-height: 750px;
     border: none;
     padding: 0;
     border-left: dashed;
@@ -2048,7 +2048,7 @@ a {
   }
 
   #news5-container {
-    min-height: 740px;
+    min-height: 750px;
   }
 
   #news5-article2-container {
