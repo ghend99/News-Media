@@ -1897,11 +1897,11 @@ a {
     padding: 0;
     border-left: dashed;
     border-right: dashed;
-    min-height: 1080px;
+    min-height: 1100px;
   }
 
   #news2-container {
-    min-height: 1080px;
+    min-height: 1100px;
     background-color: whitesmoke;
   }
 
