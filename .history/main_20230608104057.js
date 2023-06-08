@@ -519,7 +519,7 @@ const getNews3Article1 = async function (searchInput) {
       console.log(`Error Caught`);
     });
 };
-// getNews3Article1(`culture`);
+getNews3Article1(`culture`);
 
 const getNews3Article2 = async function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -580,7 +580,7 @@ const getNews3Article2 = async function (searchInput) {
       console.log(`Error Caught`);
     });
 };
-// getNews3Article2(`politics`);
+getNews3Article2(`politics`);
 
 const getNews4Article1 = async function (searchInput) {
   let url = `https://content.guardianapis.com/search?q=${searchInput}&page-size=30&show-blocks=all&api-key=${apiKey}&show-fields=thumbnail&show-fields=all`;
@@ -665,7 +665,7 @@ const getNews4Article2 = async function (searchInput) {
     });
 };
 
-// getNews4Article2(`culture`);
+getNews4Article2(`culture`);
 
 const getNews4Article3 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=40&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -731,7 +731,7 @@ const getNews4Article3 = function (searchInput) {
     });
 };
 
-// getNews4Article3(`sport`);
+getNews4Article3(`sport`);
 
 const getNews5Article1 = function (searchInput) {
   let url = `https://content.guardianapis.com/search?section=${searchInput}&page-size=45&show-blocks=all&api-key=${apiKey}&show-fields=all`;
@@ -819,7 +819,7 @@ const getNews5Article2 = function (searchInput) {
     });
 };
 
-// getNews5Article2(`sport`);
+getNews5Article2(`sport`);
 
 const section1Container = document.getElementById("news1-container");
 const btnSection1Hide = document.getElementById("news1-container-hide-header");
